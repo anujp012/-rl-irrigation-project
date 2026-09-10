@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Irrigation Dashboard - Connectivity Test</title>
+</head>
+<body>
+  <h1>Irrigation Dashboard (connectivity test)</h1>
+  <p>Status: <span id="status">loading...</span></p>
+  <pre id="output" style="background:#eee; padding:10px; max-height:400px; overflow:auto;"></pre>
+
+  <script>
+    const API_URL = "http://localhost:8000/api/trace";
+
+    fetch(API_URL)
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById("status").textContent =
+          `Connected! Received ${data.days.length} days for ${data.meta.n_zones} zones.`;
+        document.getElementById("output").textContent =
+          JSON.stringify(data.days[0], null, 2);
+      })
+      .catch(err => {
+        document.getElementById("status").textContent = "FAILED: " + err;
+      });
+  </script>
+</body>
+</html>

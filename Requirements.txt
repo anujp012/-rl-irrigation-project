@@ -1,0 +1,5 @@
+fastapi
+uvicorn[standard]
+torch>=2.0
+numpy
+pandas
