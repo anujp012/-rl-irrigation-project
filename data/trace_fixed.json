@@ -9,1509 +9,1509 @@
     {
       "day": 0,
       "weather": {
-        "temperature": 26.457075619631645,
-        "humidity": 68.10918722980306,
-        "rain_probability": 0.45709003069897736,
-        "actual_rainfall": 2.317164517334284,
-        "water_cost": 3.9450430395188554
+        "temperature": 24.5,
+        "humidity": 58.15,
+        "rain_probability": 0.10714285714285714,
+        "actual_rainfall": 0.0,
+        "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 55.37,
+          "moisture": 53.08,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -6.1
+          "reward": 2.0
         },
         "zone_1": {
-          "moisture": 48.67,
+          "moisture": 46.38,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -2.42
+          "reward": 2.0
         },
         "zone_2": {
-          "moisture": 57.06,
+          "moisture": 54.77,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -6.95
+          "reward": 2.0
         },
         "zone_3": {
-          "moisture": 53.84,
+          "moisture": 51.55,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -2.42
+          "reward": 2.0
         }
       }
     },
     {
       "day": 1,
       "weather": {
-        "temperature": 24.942347996873764,
-        "humidity": 76.46654241535441,
-        "rain_probability": 0.5140907252914121,
-        "actual_rainfall": 9.560762760686647,
+        "temperature": 25.2,
+        "humidity": 57.24,
+        "rain_probability": 0.11904761904761904,
+        "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 67.95,
+          "moisture": 55.54,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -7.98
+          "reward": -1.77
         },
         "zone_1": {
-          "moisture": 61.25,
+          "moisture": 48.84,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -4.63
+          "reward": 2.0
         },
         "zone_2": {
-          "moisture": 69.65,
+          "moisture": 57.24,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -8.82
+          "reward": -2.62
         },
         "zone_3": {
-          "moisture": 66.42,
+          "moisture": 54.01,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -7.21
+          "reward": 2.0
         }
       }
     },
     {
       "day": 2,
       "weather": {
-        "temperature": 28.12834266222412,
-        "humidity": 68.10040066441003,
-        "rain_probability": 0.450986695490825,
-        "actual_rainfall": 4.799516941325848,
+        "temperature": 25.4,
+        "humidity": 56.980000000000004,
+        "rain_probability": 0.125,
+        "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 75.08,
+          "moisture": 57.97,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -11.54
+          "reward": -2.98
         },
         "zone_1": {
-          "moisture": 68.38,
+          "moisture": 51.26,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -8.19
+          "reward": 2.0
         },
         "zone_2": {
-          "moisture": 76.77,
+          "moisture": 59.66,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -12.39
+          "reward": -3.83
         },
         "zone_3": {
-          "moisture": 73.55,
+          "moisture": 56.43,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -10.77
+          "reward": -2.22
         }
       }
     },
     {
       "day": 3,
       "weather": {
-        "temperature": 28.909897591272617,
-        "humidity": 73.42188660326576,
-        "rain_probability": 0.48061987992673844,
-        "actual_rainfall": 9.33295287093054,
-        "water_cost": 4.249439861472665
+        "temperature": 26.0,
+        "humidity": 56.199999999999996,
+        "rain_probability": 0.1130952380952381,
+        "actual_rainfall": 0.0,
+        "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 86.81,
+          "moisture": 60.26,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -22.28
+          "reward": -4.13
         },
         "zone_1": {
-          "moisture": 80.11,
+          "moisture": 53.56,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -18.93
+          "reward": 2.0
         },
         "zone_2": {
-          "moisture": 88.5,
+          "moisture": 61.96,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -23.12
+          "reward": -4.98
         },
         "zone_3": {
-          "moisture": 85.28,
+          "moisture": 58.73,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -21.51
+          "reward": -3.37
         }
       }
     },
     {
       "day": 4,
       "weather": {
-        "temperature": 25.062966314338084,
-        "humidity": 64.86065901688008,
-        "rain_probability": 0.34709674063410323,
+        "temperature": 26.2,
+        "humidity": 55.94,
+        "rain_probability": 0.11904761904761904,
         "actual_rainfall": 0.0,
-        "water_cost": 4.123082888113272
+        "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 89.5,
+          "moisture": 62.52,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -23.43
+          "reward": -5.26
         },
         "zone_1": {
-          "moisture": 82.8,
+          "moisture": 55.82,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -20.08
+          "reward": -1.91
         },
         "zone_2": {
-          "moisture": 91.19,
+          "moisture": 64.21,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -24.28
+          "reward": -6.11
         },
         "zone_3": {
-          "moisture": 87.97,
+          "moisture": 60.99,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -22.67
+          "reward": -4.49
         }
       }
     },
     {
       "day": 5,
       "weather": {
-        "temperature": 26.5188666947061,
-        "humidity": 68.23865995508916,
-        "rain_probability": 0.4475640799034941,
+        "temperature": 26.9,
+        "humidity": 55.03,
+        "rain_probability": 0.13095238095238096,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 92.07,
+          "moisture": 64.63,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -20.03
+          "reward": -6.32
         },
         "zone_1": {
-          "moisture": 85.37,
+          "moisture": 57.93,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -16.68
+          "reward": -2.97
         },
         "zone_2": {
-          "moisture": 93.76,
+          "moisture": 66.33,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -20.88
+          "reward": -7.16
         },
         "zone_3": {
-          "moisture": 90.54,
+          "moisture": 63.1,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -19.27
+          "reward": -5.55
         }
       }
     },
     {
       "day": 6,
       "weather": {
-        "temperature": 29.136757026228352,
-        "humidity": 64.19653701377086,
-        "rain_probability": 0.40744383217101077,
-        "actual_rainfall": 4.802248440398975,
-        "water_cost": 2.835236524681913
+        "temperature": 26.6,
+        "humidity": 55.419999999999995,
+        "rain_probability": 0.13095238095238096,
+        "actual_rainfall": 0.0,
+        "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 98.91,
+          "moisture": 66.81,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -26.21
+          "reward": -7.4
         },
         "zone_1": {
-          "moisture": 92.21,
+          "moisture": 60.1,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -22.86
+          "reward": -4.05
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 68.5,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -26.75
+          "reward": -8.25
         },
         "zone_3": {
-          "moisture": 97.38,
+          "moisture": 65.27,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -25.44
+          "reward": -6.64
         }
       }
     },
     {
       "day": 7,
       "weather": {
-        "temperature": 28.93187044400521,
-        "humidity": 66.87724040748748,
-        "rain_probability": 0.3874822872417142,
-        "actual_rainfall": 0.0,
-        "water_cost": 1.0
+        "temperature": 26.4,
+        "humidity": 55.83,
+        "rain_probability": 0.13690476190476192,
+        "actual_rainfall": 0.2,
+        "water_cost": 3.6668025093175856
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 69.23,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -24.0
+          "reward": -12.61
         },
         "zone_1": {
-          "moisture": 94.38,
+          "moisture": 62.52,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -21.19
+          "reward": -9.26
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 70.92,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -24.0
+          "reward": -13.46
         },
         "zone_3": {
-          "moisture": 99.55,
+          "moisture": 67.69,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -23.77
+          "reward": -11.85
         }
       }
     },
     {
       "day": 8,
       "weather": {
-        "temperature": 29.828827656557287,
-        "humidity": 72.34614088794493,
-        "rain_probability": 0.40254983179930026,
+        "temperature": 26.9,
+        "humidity": 55.03,
+        "rain_probability": 0.13095238095238096,
         "actual_rainfall": 0.0,
-        "water_cost": 1.0
+        "water_cost": 2.659543140260438
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 71.34,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -24.0
+          "reward": -12.16
         },
         "zone_1": {
-          "moisture": 96.61,
+          "moisture": 64.64,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -22.3
+          "reward": -8.81
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 73.03,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -24.0
+          "reward": -13.0
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 69.81,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -24.0
+          "reward": -11.39
         }
       }
     },
     {
       "day": 9,
       "weather": {
-        "temperature": 29.007048468471602,
-        "humidity": 59.02831676656849,
-        "rain_probability": 0.4270104601906856,
+        "temperature": 28.3,
+        "humidity": 53.21,
+        "rain_probability": 0.13095238095238096,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 73.15,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -24.0
+          "reward": -10.57
         },
         "zone_1": {
-          "moisture": 98.5,
+          "moisture": 66.45,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -23.25
+          "reward": -7.22
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 74.84,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -24.0
+          "reward": -11.42
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 71.62,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -24.0
+          "reward": -9.81
         }
       }
     },
     {
       "day": 10,
       "weather": {
-        "temperature": 32.02137898063403,
-        "humidity": 69.30737313335351,
-        "rain_probability": 0.4860064303768314,
+        "temperature": 28.7,
+        "humidity": 52.69,
+        "rain_probability": 0.13690476190476192,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 74.87,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -24.0
+          "reward": -11.44
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 68.17,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -24.0
+          "reward": -8.09
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 76.57,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -24.0
+          "reward": -12.28
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 73.34,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -24.0
+          "reward": -10.67
         }
       }
     },
     {
       "day": 11,
       "weather": {
-        "temperature": 32.26607982113294,
-        "humidity": 67.74637665329823,
-        "rain_probability": 0.3696356612906721,
+        "temperature": 28.9,
+        "humidity": 52.43,
+        "rain_probability": 0.13095238095238096,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 76.55,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -24.0
+          "reward": -12.28
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 69.85,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -24.0
+          "reward": -8.93
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 78.25,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -24.0
+          "reward": -13.12
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 75.02,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -24.0
+          "reward": -11.51
         }
       }
     },
     {
       "day": 12,
       "weather": {
-        "temperature": 31.575422893771332,
-        "humidity": 62.96377963283721,
-        "rain_probability": 0.4324969851229248,
-        "actual_rainfall": 10.421556263320909,
+        "temperature": 28.9,
+        "humidity": 52.43,
+        "rain_probability": 0.125,
+        "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 78.23,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -24.0
+          "reward": -13.12
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 71.53,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -24.0
+          "reward": -9.77
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 79.93,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -24.0
+          "reward": -13.96
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 76.7,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -24.0
+          "reward": -12.35
         }
       }
     },
     {
       "day": 13,
       "weather": {
-        "temperature": 33.52261082982334,
-        "humidity": 58.03791731698805,
-        "rain_probability": 0.40105286434209375,
-        "actual_rainfall": 1.8937222203112363,
+        "temperature": 28.5,
+        "humidity": 52.949999999999996,
+        "rain_probability": 0.11904761904761904,
+        "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 80.0,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -24.0
+          "reward": -14.0
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 73.3,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -24.0
+          "reward": -10.65
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 81.7,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -24.0
+          "reward": -14.85
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 78.47,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -24.0
+          "reward": -13.24
         }
       }
     },
     {
       "day": 14,
       "weather": {
-        "temperature": 32.86536995558438,
-        "humidity": 64.9220073847997,
-        "rain_probability": 0.40248193038230495,
+        "temperature": 27.2,
+        "humidity": 54.64,
+        "rain_probability": 0.1130952380952381,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 82.05,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -24.0
+          "reward": -15.03
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 75.35,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -24.0
+          "reward": -11.67
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 83.74,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -24.0
+          "reward": -15.87
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 80.52,
           "stage": "seedling",
           "applied_liters": 5.0,
-          "reward": -24.0
+          "reward": -14.26
         }
       }
     },
     {
       "day": 15,
       "weather": {
-        "temperature": 31.18319726067472,
-        "humidity": 61.169315239068084,
-        "rain_probability": 0.46194129014021973,
-        "actual_rainfall": 8.906910268650577,
+        "temperature": 27.6,
+        "humidity": 54.12,
+        "rain_probability": 0.1130952380952381,
+        "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 81.99,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -19.0
+          "reward": -9.99
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 75.29,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -19.0
+          "reward": -6.64
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 83.68,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -19.0
+          "reward": -10.84
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 80.46,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -19.0
+          "reward": -9.23
         }
       }
     },
     {
       "day": 16,
       "weather": {
-        "temperature": 33.30774958013987,
-        "humidity": 64.20078298145847,
-        "rain_probability": 0.4310084204053542,
-        "actual_rainfall": 19.658390707795174,
+        "temperature": 28.4,
+        "humidity": 53.08,
+        "rain_probability": 0.1130952380952381,
+        "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 81.64,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -19.0
+          "reward": -9.82
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 74.94,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -19.0
+          "reward": -6.47
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 83.33,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -19.0
+          "reward": -10.67
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 80.11,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -19.0
+          "reward": -9.05
         }
       }
     },
     {
       "day": 17,
       "weather": {
-        "temperature": 31.572129539107408,
-        "humidity": 62.33556583914294,
-        "rain_probability": 0.4626636308564195,
-        "actual_rainfall": 12.4132789144018,
-        "water_cost": 2.7980438154943617
+        "temperature": 29.1,
+        "humidity": 52.169999999999995,
+        "rain_probability": 0.10714285714285714,
+        "actual_rainfall": 0.0,
+        "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 81.03,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -21.7
+          "reward": -9.52
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 74.33,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -21.7
+          "reward": -6.17
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 82.73,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -21.7
+          "reward": -10.36
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 79.5,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -21.7
+          "reward": -8.75
         }
       }
     },
     {
       "day": 18,
       "weather": {
-        "temperature": 34.55629187168907,
-        "humidity": 69.39558383008067,
-        "rain_probability": 0.3791841372232428,
-        "actual_rainfall": 36.324247752165824,
-        "water_cost": 1.0
+        "temperature": 29.9,
+        "humidity": 51.13,
+        "rain_probability": 0.1130952380952381,
+        "actual_rainfall": 0.0,
+        "water_cost": 4.207622383106137
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 80.13,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -19.0
+          "reward": -13.88
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 73.43,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -19.0
+          "reward": -10.53
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 81.82,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -19.0
+          "reward": -14.72
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 78.6,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -19.0
+          "reward": -13.11
         }
       }
     },
     {
       "day": 19,
       "weather": {
-        "temperature": 33.36332302062663,
-        "humidity": 59.32509015290505,
-        "rain_probability": 0.3426876673662028,
+        "temperature": 28.2,
+        "humidity": 53.339999999999996,
+        "rain_probability": 0.11904761904761904,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 98.64,
+          "moisture": 79.85,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -18.32
+          "reward": -8.93
         },
         "zone_1": {
-          "moisture": 98.64,
+          "moisture": 73.15,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -18.32
+          "reward": -5.58
         },
         "zone_2": {
-          "moisture": 98.64,
+          "moisture": 81.55,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -18.32
+          "reward": -9.77
         },
         "zone_3": {
-          "moisture": 98.64,
+          "moisture": 78.32,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -18.32
+          "reward": -8.16
         }
       }
     },
     {
       "day": 20,
       "weather": {
-        "temperature": 33.33115858504334,
-        "humidity": 54.51776745251488,
-        "rain_probability": 0.3563641096144696,
+        "temperature": 26.5,
+        "humidity": 55.55,
+        "rain_probability": 0.14285714285714285,
         "actual_rainfall": 0.0,
-        "water_cost": 3.770881846117355
+        "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 96.96,
+          "moisture": 80.18,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -21.64
+          "reward": -9.09
         },
         "zone_1": {
-          "moisture": 96.96,
+          "moisture": 73.48,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -21.64
+          "reward": -5.74
         },
         "zone_2": {
-          "moisture": 96.96,
+          "moisture": 81.87,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -21.64
+          "reward": -9.94
         },
         "zone_3": {
-          "moisture": 96.96,
+          "moisture": 78.65,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -21.64
+          "reward": -8.32
         }
       }
     },
     {
       "day": 21,
       "weather": {
-        "temperature": 32.727270972423135,
-        "humidity": 59.626726482254405,
-        "rain_probability": 0.36929019855936046,
+        "temperature": 27.1,
+        "humidity": 54.769999999999996,
+        "rain_probability": 0.16666666666666666,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 95.8,
+          "moisture": 80.29,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -16.9
+          "reward": -9.15
         },
         "zone_1": {
-          "moisture": 95.8,
+          "moisture": 73.59,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -16.9
+          "reward": -5.8
         },
         "zone_2": {
-          "moisture": 95.8,
+          "moisture": 81.98,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -16.9
+          "reward": -9.99
         },
         "zone_3": {
-          "moisture": 95.8,
+          "moisture": 78.76,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -16.9
+          "reward": -8.38
         }
       }
     },
     {
       "day": 22,
       "weather": {
-        "temperature": 35.692110013840555,
-        "humidity": 58.91070313864469,
-        "rain_probability": 0.3551794027430286,
+        "temperature": 27.5,
+        "humidity": 54.25,
+        "rain_probability": 0.17261904761904762,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 93.78,
+          "moisture": 80.27,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -15.89
+          "reward": -9.13
         },
         "zone_1": {
-          "moisture": 93.78,
+          "moisture": 73.56,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -15.89
+          "reward": -5.78
         },
         "zone_2": {
-          "moisture": 93.78,
+          "moisture": 81.96,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -15.89
+          "reward": -9.98
         },
         "zone_3": {
-          "moisture": 93.78,
+          "moisture": 78.73,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -15.89
+          "reward": -8.37
         }
       }
     },
     {
       "day": 23,
       "weather": {
-        "temperature": 33.70512338741262,
-        "humidity": 63.67593637966675,
-        "rain_probability": 0.28093645470134626,
+        "temperature": 28.4,
+        "humidity": 53.08,
+        "rain_probability": 0.19642857142857142,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 92.64,
+          "moisture": 79.92,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -15.32
+          "reward": -8.96
         },
         "zone_1": {
-          "moisture": 92.64,
+          "moisture": 73.21,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -15.32
+          "reward": -5.61
         },
         "zone_2": {
-          "moisture": 92.64,
+          "moisture": 81.61,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -15.32
+          "reward": -9.8
         },
         "zone_3": {
-          "moisture": 92.64,
+          "moisture": 78.38,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -15.32
+          "reward": -8.19
         }
       }
     },
     {
       "day": 24,
       "weather": {
-        "temperature": 33.34172209418151,
-        "humidity": 60.11741402251259,
-        "rain_probability": 0.32814939961832934,
-        "actual_rainfall": 21.924821662189267,
+        "temperature": 29.5,
+        "humidity": 51.65,
+        "rain_probability": 0.21428571428571427,
+        "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 79.16,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -19.0
+          "reward": -8.58
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 72.46,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -19.0
+          "reward": -5.23
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 80.85,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -19.0
+          "reward": -9.43
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 77.63,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -19.0
+          "reward": -7.81
         }
       }
     },
     {
       "day": 25,
       "weather": {
-        "temperature": 33.47179967426766,
-        "humidity": 56.784355295747545,
-        "rain_probability": 0.3232148153819348,
-        "actual_rainfall": 42.870923793402504,
+        "temperature": 29.1,
+        "humidity": 52.169999999999995,
+        "rain_probability": 0.23809523809523808,
+        "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 78.56,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -19.0
+          "reward": -8.28
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 71.85,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -19.0
+          "reward": -4.93
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 80.25,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -19.0
+          "reward": -9.12
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 77.02,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -19.0
+          "reward": -7.51
         }
       }
     },
     {
       "day": 26,
       "weather": {
-        "temperature": 34.7826776057562,
-        "humidity": 61.374656663158106,
-        "rain_probability": 0.42561167930966703,
-        "actual_rainfall": 2.358714232122431,
+        "temperature": 29.9,
+        "humidity": 51.13,
+        "rain_probability": 0.25,
+        "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 77.65,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -19.0
+          "reward": -7.83
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 70.95,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -19.0
+          "reward": -4.48
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 79.35,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -19.0
+          "reward": -8.67
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 76.12,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -19.0
+          "reward": -7.06
         }
       }
     },
     {
       "day": 27,
       "weather": {
-        "temperature": 34.48508370706194,
-        "humidity": 47.17618622492118,
-        "rain_probability": 0.3813184934812284,
+        "temperature": 29.8,
+        "humidity": 51.26,
+        "rain_probability": 0.2261904761904762,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 97.45,
+          "moisture": 76.79,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -17.72
+          "reward": -7.39
         },
         "zone_1": {
-          "moisture": 97.45,
+          "moisture": 70.09,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -17.72
+          "reward": -4.04
         },
         "zone_2": {
-          "moisture": 97.45,
+          "moisture": 78.48,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -17.72
+          "reward": -8.24
         },
         "zone_3": {
-          "moisture": 97.45,
+          "moisture": 75.26,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -17.72
+          "reward": -6.63
         }
       }
     },
     {
       "day": 28,
       "weather": {
-        "temperature": 34.477396923223495,
-        "humidity": 48.990522617465395,
-        "rain_probability": 0.2324044791849199,
+        "temperature": 29.8,
+        "humidity": 51.26,
+        "rain_probability": 0.2261904761904762,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 95.03,
+          "moisture": 75.92,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -16.51
+          "reward": -6.96
         },
         "zone_1": {
-          "moisture": 95.03,
+          "moisture": 69.22,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -16.51
+          "reward": -3.61
         },
         "zone_2": {
-          "moisture": 95.03,
+          "moisture": 77.62,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -16.51
+          "reward": -7.81
         },
         "zone_3": {
-          "moisture": 95.03,
+          "moisture": 74.39,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -16.51
+          "reward": -6.2
         }
       }
     },
     {
       "day": 29,
       "weather": {
-        "temperature": 34.39489679354087,
-        "humidity": 46.63677198549955,
-        "rain_probability": 0.2481889358284039,
+        "temperature": 29.9,
+        "humidity": 51.13,
+        "rain_probability": 0.24404761904761904,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 92.47,
+          "moisture": 75.02,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -15.23
+          "reward": -6.51
         },
         "zone_1": {
-          "moisture": 92.47,
+          "moisture": 68.32,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -15.23
+          "reward": -3.16
         },
         "zone_2": {
-          "moisture": 92.47,
+          "moisture": 76.71,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -15.23
+          "reward": -7.36
         },
         "zone_3": {
-          "moisture": 92.47,
+          "moisture": 73.49,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -15.23
+          "reward": -5.74
         }
       }
     },
     {
       "day": 30,
       "weather": {
-        "temperature": 36.82092353166692,
-        "humidity": 48.41569606859695,
-        "rain_probability": 0.17682789990814984,
+        "temperature": 29.7,
+        "humidity": 51.39,
+        "rain_probability": 0.22023809523809523,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 89.29,
+          "moisture": 74.19,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -13.65
+          "reward": -6.1
         },
         "zone_1": {
-          "moisture": 89.29,
+          "moisture": 67.49,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -13.65
+          "reward": -2.75
         },
         "zone_2": {
-          "moisture": 89.29,
+          "moisture": 75.89,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -13.65
+          "reward": -6.94
         },
         "zone_3": {
-          "moisture": 89.29,
+          "moisture": 72.66,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -13.65
+          "reward": -5.33
         }
       }
     },
     {
       "day": 31,
       "weather": {
-        "temperature": 32.828589362529094,
-        "humidity": 42.59470097194829,
-        "rain_probability": 0.20790654539596298,
-        "actual_rainfall": 0.0,
+        "temperature": 26.5,
+        "humidity": 56.0,
+        "rain_probability": 0.21428571428571427,
+        "actual_rainfall": 0.6,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 86.94,
+          "moisture": 75.14,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -12.47
+          "reward": -6.57
         },
         "zone_1": {
-          "moisture": 86.94,
+          "moisture": 68.44,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -12.47
+          "reward": -3.22
         },
         "zone_2": {
-          "moisture": 86.94,
+          "moisture": 76.83,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -12.47
+          "reward": -7.42
         },
         "zone_3": {
-          "moisture": 86.94,
+          "moisture": 73.61,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -12.47
+          "reward": -5.8
         }
       }
     },
     {
       "day": 32,
       "weather": {
-        "temperature": 32.47025232612085,
-        "humidity": 51.789065360595934,
-        "rain_probability": 0.24071360346665618,
+        "temperature": 28.6,
+        "humidity": 52.82,
+        "rain_probability": 0.19642857142857142,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 85.32,
+          "moisture": 74.72,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -11.66
+          "reward": -6.36
         },
         "zone_1": {
-          "moisture": 85.32,
+          "moisture": 68.02,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -11.66
+          "reward": -3.01
         },
         "zone_2": {
-          "moisture": 85.32,
+          "moisture": 76.41,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -11.66
+          "reward": -7.2
         },
         "zone_3": {
-          "moisture": 85.32,
+          "moisture": 73.19,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -11.66
+          "reward": -5.59
         }
       }
     },
     {
       "day": 33,
       "weather": {
-        "temperature": 31.78979434797909,
-        "humidity": 46.6625814029804,
-        "rain_probability": 0.27281641812726676,
+        "temperature": 29.3,
+        "humidity": 51.91,
+        "rain_probability": 0.19047619047619047,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 83.56,
+          "moisture": 74.04,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -10.78
+          "reward": -6.02
         },
         "zone_1": {
-          "moisture": 83.56,
+          "moisture": 67.34,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -10.78
+          "reward": -2.67
         },
         "zone_2": {
-          "moisture": 83.56,
+          "moisture": 75.73,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -10.78
+          "reward": -6.87
         },
         "zone_3": {
-          "moisture": 83.56,
+          "moisture": 72.51,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -10.78
+          "reward": -5.25
         }
       }
     },
     {
       "day": 34,
       "weather": {
-        "temperature": 33.67859253787937,
-        "humidity": 39.60856660280175,
-        "rain_probability": 0.16380783067984864,
+        "temperature": 29.8,
+        "humidity": 51.26,
+        "rain_probability": 0.19047619047619047,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 80.72,
+          "moisture": 73.17,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -9.36
+          "reward": -5.59
         },
         "zone_1": {
-          "moisture": 80.72,
+          "moisture": 66.47,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -9.36
+          "reward": -2.24
         },
         "zone_2": {
-          "moisture": 80.72,
+          "moisture": 74.87,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -9.36
+          "reward": -6.43
         },
         "zone_3": {
-          "moisture": 80.72,
+          "moisture": 71.64,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -9.36
+          "reward": -4.82
         }
       }
     },
     {
       "day": 35,
       "weather": {
-        "temperature": 34.16559439408092,
-        "humidity": 41.10532580957519,
-        "rain_probability": 0.15548927912162072,
-        "actual_rainfall": 4.351092492614556,
+        "temperature": 29.3,
+        "humidity": 51.91,
+        "rain_probability": 0.15476190476190477,
+        "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 82.17,
+          "moisture": 72.49,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -10.09
+          "reward": -5.25
         },
         "zone_1": {
-          "moisture": 82.17,
+          "moisture": 65.79,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -10.09
+          "reward": -1.9
         },
         "zone_2": {
-          "moisture": 82.17,
+          "moisture": 74.19,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -10.09
+          "reward": -6.09
         },
         "zone_3": {
-          "moisture": 82.17,
+          "moisture": 70.96,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -10.09
+          "reward": -4.48
         }
       }
     },
     {
       "day": 36,
       "weather": {
-        "temperature": 31.993184755724,
-        "humidity": 47.00620939102063,
-        "rain_probability": 0.06901063797613166,
+        "temperature": 29.3,
+        "humidity": 51.91,
+        "rain_probability": 0.11904761904761904,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 80.38,
+          "moisture": 71.81,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -9.19
+          "reward": -4.91
         },
         "zone_1": {
-          "moisture": 80.38,
+          "moisture": 65.11,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -9.19
+          "reward": -1.56
         },
         "zone_2": {
-          "moisture": 80.38,
+          "moisture": 73.51,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -9.19
+          "reward": -5.75
         },
         "zone_3": {
-          "moisture": 80.38,
+          "moisture": 70.28,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -9.19
+          "reward": -4.14
         }
       }
     },
     {
       "day": 37,
       "weather": {
-        "temperature": 30.571514303927497,
-        "humidity": 48.92242625054157,
-        "rain_probability": 0.15671084565974014,
+        "temperature": 29.6,
+        "humidity": 51.519999999999996,
+        "rain_probability": 0.10714285714285714,
         "actual_rainfall": 0.0,
-        "water_cost": 4.851486024238796
+        "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 79.14,
+          "moisture": 71.02,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -14.35
+          "reward": -4.51
         },
         "zone_1": {
-          "moisture": 79.14,
+          "moisture": 64.32,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -14.35
+          "reward": 2.0
         },
         "zone_2": {
-          "moisture": 79.14,
+          "moisture": 72.72,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -14.35
+          "reward": -5.36
         },
         "zone_3": {
-          "moisture": 79.14,
+          "moisture": 69.49,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -14.35
+          "reward": -3.75
         }
       }
     },
     {
       "day": 38,
       "weather": {
-        "temperature": 30.239655023892652,
-        "humidity": 54.049125047137764,
-        "rain_probability": 0.10052854458667879,
+        "temperature": 31.7,
+        "humidity": 48.79,
+        "rain_probability": 0.07738095238095238,
         "actual_rainfall": 0.0,
-        "water_cost": 1.0
+        "water_cost": 4.079160997805162
       },
       "zones": {
         "zone_0": {
-          "moisture": 78.32,
+          "moisture": 69.43,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -8.16
+          "reward": -8.34
         },
         "zone_1": {
-          "moisture": 78.32,
+          "moisture": 62.73,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -8.16
+          "reward": -2.62
         },
         "zone_2": {
-          "moisture": 78.32,
+          "moisture": 71.13,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -8.16
+          "reward": -9.18
         },
         "zone_3": {
-          "moisture": 78.32,
+          "moisture": 67.9,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -8.16
+          "reward": -7.57
         }
       }
     },
     {
       "day": 39,
       "weather": {
-        "temperature": 32.07528109972657,
-        "humidity": 58.01161368839982,
-        "rain_probability": 0.11636266963589702,
+        "temperature": 30.6,
+        "humidity": 50.22,
+        "rain_probability": 0.06547619047619048,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 77.22,
+          "moisture": 68.27,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -7.61
+          "reward": -3.13
         },
         "zone_1": {
-          "moisture": 77.22,
+          "moisture": 61.57,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -7.61
+          "reward": 2.0
         },
         "zone_2": {
-          "moisture": 77.22,
+          "moisture": 69.96,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -7.61
+          "reward": -3.98
         },
         "zone_3": {
-          "moisture": 77.22,
+          "moisture": 66.74,
           "stage": "vegetative",
           "applied_liters": 5.0,
-          "reward": -7.61
+          "reward": -2.37
         }
       }
     },
     {
       "day": 40,
       "weather": {
-        "temperature": 31.81716327514495,
-        "humidity": 44.93679225075577,
-        "rain_probability": 0.08859991063312604,
+        "temperature": 31.1,
+        "humidity": 49.57,
+        "rain_probability": 0.041666666666666664,
         "actual_rainfall": 0.0,
-        "water_cost": 4.865061133895238
+        "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 73.28,
+          "moisture": 65.0,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -3.8
+          "reward": 2.0
         },
         "zone_1": {
-          "moisture": 73.28,
+          "moisture": 58.3,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -3.8
+          "reward": 2.0
         },
         "zone_2": {
-          "moisture": 73.28,
+          "moisture": 66.7,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -3.8
+          "reward": 2.0
         },
         "zone_3": {
-          "moisture": 73.28,
+          "moisture": 63.47,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -3.8
+          "reward": 2.0
         }
       }
     },
     {
       "day": 41,
       "weather": {
-        "temperature": 31.101345762289768,
-        "humidity": 37.38739051731046,
-        "rain_probability": 0.1178020743376342,
+        "temperature": 31.1,
+        "humidity": 49.57,
+        "rain_probability": 0.047619047619047616,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 69.02,
+          "moisture": 61.74,
           "stage": "flowering",
           "applied_liters": 5.0,
           "reward": 2.0
         },
         "zone_1": {
-          "moisture": 69.02,
+          "moisture": 55.04,
           "stage": "flowering",
           "applied_liters": 5.0,
           "reward": 2.0
         },
         "zone_2": {
-          "moisture": 69.02,
+          "moisture": 63.43,
           "stage": "flowering",
           "applied_liters": 5.0,
           "reward": 2.0
         },
         "zone_3": {
-          "moisture": 69.02,
+          "moisture": 60.21,
           "stage": "flowering",
           "applied_liters": 5.0,
           "reward": 2.0
@@ -1521,33 +1521,33 @@
     {
       "day": 42,
       "weather": {
-        "temperature": 28.85576483188068,
-        "humidity": 31.1951683956855,
-        "rain_probability": 0.025204159246430755,
+        "temperature": 30.9,
+        "humidity": 49.83,
+        "rain_probability": 0.05357142857142857,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 65.28,
+          "moisture": 58.57,
           "stage": "flowering",
           "applied_liters": 5.0,
           "reward": 2.0
         },
         "zone_1": {
-          "moisture": 65.28,
+          "moisture": 51.87,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -4.63
         },
         "zone_2": {
-          "moisture": 65.28,
+          "moisture": 60.27,
           "stage": "flowering",
           "applied_liters": 5.0,
           "reward": 2.0
         },
         "zone_3": {
-          "moisture": 65.28,
+          "moisture": 57.04,
           "stage": "flowering",
           "applied_liters": 5.0,
           "reward": 2.0
@@ -1557,2052 +1557,2052 @@
     {
       "day": 43,
       "weather": {
-        "temperature": 29.754476317120663,
-        "humidity": 42.76615152472889,
-        "rain_probability": 0.03085401224616814,
+        "temperature": 31.5,
+        "humidity": 49.05,
+        "rain_probability": 0.05952380952380952,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 62.02,
+          "moisture": 55.11,
           "stage": "flowering",
           "applied_liters": 5.0,
           "reward": 2.0
         },
         "zone_1": {
-          "moisture": 62.02,
+          "moisture": 48.41,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -8.09
         },
         "zone_2": {
-          "moisture": 62.02,
+          "moisture": 56.8,
           "stage": "flowering",
           "applied_liters": 5.0,
           "reward": 2.0
         },
         "zone_3": {
-          "moisture": 62.02,
+          "moisture": 53.58,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -2.92
         }
       }
     },
     {
       "day": 44,
       "weather": {
-        "temperature": 29.12002513518852,
-        "humidity": 36.988647235124596,
-        "rain_probability": 0.20235970704625705,
+        "temperature": 31.4,
+        "humidity": 49.18,
+        "rain_probability": 0.07738095238095238,
         "actual_rainfall": 0.0,
-        "water_cost": 3.1951888644531437
+        "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 58.59,
+          "moisture": 51.7,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -1.29
+          "reward": -4.8
         },
         "zone_1": {
-          "moisture": 58.59,
+          "moisture": 44.99,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -1.29
+          "reward": -11.51
         },
         "zone_2": {
-          "moisture": 58.59,
+          "moisture": 53.39,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -1.29
+          "reward": -3.11
         },
         "zone_3": {
-          "moisture": 58.59,
+          "moisture": 50.16,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -1.29
+          "reward": -6.34
         }
       }
     },
     {
       "day": 45,
       "weather": {
-        "temperature": 28.800168850093097,
-        "humidity": 38.65736595467427,
-        "rain_probability": 0.023825472061308958,
+        "temperature": 31.4,
+        "humidity": 49.18,
+        "rain_probability": 0.09523809523809523,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 55.43,
+          "moisture": 48.28,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -8.22
         },
         "zone_1": {
-          "moisture": 55.43,
+          "moisture": 41.58,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -14.92
         },
         "zone_2": {
-          "moisture": 55.43,
+          "moisture": 49.97,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -6.53
         },
         "zone_3": {
-          "moisture": 55.43,
+          "moisture": 46.75,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -9.75
         }
       }
     },
     {
       "day": 46,
       "weather": {
-        "temperature": 29.296662264241125,
-        "humidity": 37.4107685877715,
-        "rain_probability": 0.026295135976864954,
+        "temperature": 31.2,
+        "humidity": 49.44,
+        "rain_probability": 0.10119047619047619,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 51.95,
+          "moisture": 44.97,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -4.55
+          "reward": -11.53
         },
         "zone_1": {
-          "moisture": 51.95,
+          "moisture": 38.26,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -4.55
+          "reward": -18.24
         },
         "zone_2": {
-          "moisture": 51.95,
+          "moisture": 46.66,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -4.55
+          "reward": -9.84
         },
         "zone_3": {
-          "moisture": 51.95,
+          "moisture": 43.43,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -4.55
+          "reward": -13.07
         }
       }
     },
     {
       "day": 47,
       "weather": {
-        "temperature": 27.83444383984782,
-        "humidity": 39.56173680698774,
-        "rain_probability": 0.16658434040729297,
-        "actual_rainfall": 1.440678848272955,
+        "temperature": 32.3,
+        "humidity": 48.010000000000005,
+        "rain_probability": 0.10714285714285714,
+        "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 50.71,
+          "moisture": 41.1,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -5.79
+          "reward": -15.4
         },
         "zone_1": {
-          "moisture": 50.71,
+          "moisture": 34.39,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -5.79
+          "reward": -22.11
         },
         "zone_2": {
-          "moisture": 50.71,
+          "moisture": 42.79,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -5.79
+          "reward": -13.71
         },
         "zone_3": {
-          "moisture": 50.71,
+          "moisture": 39.56,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -5.79
+          "reward": -16.94
         }
       }
     },
     {
       "day": 48,
       "weather": {
-        "temperature": 28.02103621312228,
-        "humidity": 45.44818063422105,
-        "rain_probability": 0.21428794796881637,
+        "temperature": 33.1,
+        "humidity": 46.97,
+        "rain_probability": 0.09523809523809523,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 48.37,
+          "moisture": 36.81,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -8.13
+          "reward": -19.69
         },
         "zone_1": {
-          "moisture": 48.37,
+          "moisture": 30.11,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -8.13
+          "reward": -26.39
         },
         "zone_2": {
-          "moisture": 48.37,
+          "moisture": 38.51,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -8.13
+          "reward": -17.99
         },
         "zone_3": {
-          "moisture": 48.37,
+          "moisture": 35.28,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -8.13
+          "reward": -21.22
         }
       }
     },
     {
       "day": 49,
       "weather": {
-        "temperature": 26.603692760467844,
-        "humidity": 40.81484191080265,
-        "rain_probability": 0.02,
+        "temperature": 33.3,
+        "humidity": 46.71,
+        "rain_probability": 0.09523809523809523,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 46.3,
+          "moisture": 32.43,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -10.2
+          "reward": -24.07
         },
         "zone_1": {
-          "moisture": 46.3,
+          "moisture": 25.73,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -10.2
+          "reward": -30.77
         },
         "zone_2": {
-          "moisture": 46.3,
+          "moisture": 34.12,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -10.2
+          "reward": -22.38
         },
         "zone_3": {
-          "moisture": 46.3,
+          "moisture": 30.9,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -10.2
+          "reward": -25.6
         }
       }
     },
     {
       "day": 50,
       "weather": {
-        "temperature": 26.433679098034975,
-        "humidity": 39.20682581480656,
-        "rain_probability": 0.041376248901567755,
+        "temperature": 33.0,
+        "humidity": 47.1,
+        "rain_probability": 0.08928571428571429,
         "actual_rainfall": 0.0,
-        "water_cost": 1.0
+        "water_cost": 4.395219350213434
       },
       "zones": {
         "zone_0": {
-          "moisture": 44.19,
+          "moisture": 28.2,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -12.31
+          "reward": -33.39
         },
         "zone_1": {
-          "moisture": 44.19,
+          "moisture": 21.5,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -12.31
+          "reward": -40.1
         },
         "zone_2": {
-          "moisture": 44.19,
+          "moisture": 29.89,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -12.31
+          "reward": -31.7
         },
         "zone_3": {
-          "moisture": 44.19,
+          "moisture": 26.67,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -12.31
+          "reward": -34.93
         }
       }
     },
     {
       "day": 51,
       "weather": {
-        "temperature": 26.444608182523304,
-        "humidity": 34.851330309446865,
-        "rain_probability": 0.07336114532129924,
+        "temperature": 31.9,
+        "humidity": 48.53,
+        "rain_probability": 0.10119047619047619,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 41.81,
+          "moisture": 24.53,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -14.69
+          "reward": -31.97
         },
         "zone_1": {
-          "moisture": 41.81,
+          "moisture": 17.83,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -14.69
+          "reward": -53.67
         },
         "zone_2": {
-          "moisture": 41.81,
+          "moisture": 26.22,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -14.69
+          "reward": -30.28
         },
         "zone_3": {
-          "moisture": 41.81,
+          "moisture": 23.0,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -14.69
+          "reward": -33.5
         }
       }
     },
     {
       "day": 52,
       "weather": {
-        "temperature": 22.811600401702066,
-        "humidity": 31.744864756761046,
-        "rain_probability": 0.13997743207454186,
+        "temperature": 33.0,
+        "humidity": 47.1,
+        "rain_probability": 0.14285714285714285,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 40.9,
+          "moisture": 20.3,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -15.6
+          "reward": -36.2
         },
         "zone_1": {
-          "moisture": 40.9,
+          "moisture": 13.6,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -15.6
+          "reward": -57.9
         },
         "zone_2": {
-          "moisture": 40.9,
+          "moisture": 21.99,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -15.6
+          "reward": -34.51
         },
         "zone_3": {
-          "moisture": 40.9,
+          "moisture": 18.77,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -15.6
+          "reward": -52.73
         }
       }
     },
     {
       "day": 53,
       "weather": {
-        "temperature": 24.02144265877825,
-        "humidity": 37.834151693703014,
-        "rain_probability": 0.02,
+        "temperature": 33.6,
+        "humidity": 46.31999999999999,
+        "rain_probability": 0.1488095238095238,
         "actual_rainfall": 0.0,
-        "water_cost": 3.569758034203375
+        "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 39.77,
+          "moisture": 15.76,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -20.59
+          "reward": -55.74
         },
         "zone_1": {
-          "moisture": 39.77,
+          "moisture": 9.06,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -20.59
+          "reward": -62.44
         },
         "zone_2": {
-          "moisture": 39.77,
+          "moisture": 17.45,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -20.59
+          "reward": -54.05
         },
         "zone_3": {
-          "moisture": 39.77,
+          "moisture": 14.23,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -20.59
+          "reward": -57.27
         }
       }
     },
     {
       "day": 54,
       "weather": {
-        "temperature": 23.30492192124197,
-        "humidity": 40.20233982897893,
-        "rain_probability": 0.03813076201724018,
-        "actual_rainfall": 0.0,
+        "temperature": 32.9,
+        "humidity": 47.83,
+        "rain_probability": 0.16666666666666666,
+        "actual_rainfall": 0.8,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 39.07,
+          "moisture": 12.43,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -17.43
+          "reward": -59.07
         },
         "zone_1": {
-          "moisture": 39.07,
+          "moisture": 5.73,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -17.43
+          "reward": -65.77
         },
         "zone_2": {
-          "moisture": 39.07,
+          "moisture": 14.13,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -17.43
+          "reward": -57.37
         },
         "zone_3": {
-          "moisture": 39.07,
+          "moisture": 10.9,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -17.43
+          "reward": -60.6
         }
       }
     },
     {
       "day": 55,
       "weather": {
-        "temperature": 22.569547272635408,
-        "humidity": 49.57380182347211,
-        "rain_probability": 0.08886687880308719,
-        "actual_rainfall": 0.0,
+        "temperature": 30.4,
+        "humidity": 51.68000000000001,
+        "rain_probability": 0.17857142857142858,
+        "actual_rainfall": 1.6,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 39.15,
+          "moisture": 11.21,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -17.35
+          "reward": -60.29
         },
         "zone_1": {
-          "moisture": 39.15,
+          "moisture": 4.51,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -17.35
+          "reward": -66.99
         },
         "zone_2": {
-          "moisture": 39.15,
+          "moisture": 12.9,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -17.35
+          "reward": -58.6
         },
         "zone_3": {
-          "moisture": 39.15,
+          "moisture": 9.68,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -17.35
+          "reward": -61.82
         }
       }
     },
     {
       "day": 56,
       "weather": {
-        "temperature": 22.642290201682552,
-        "humidity": 41.704725319040655,
-        "rain_probability": 0.07213295803767661,
+        "temperature": 32.0,
+        "humidity": 48.4,
+        "rain_probability": 0.19047619047619047,
         "actual_rainfall": 0.0,
-        "water_cost": 3.6854218237065455
+        "water_cost": 2.8857237301688694
       },
       "zones": {
         "zone_0": {
-          "moisture": 38.81,
+          "moisture": 7.49,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -21.72
+          "reward": -66.83
         },
         "zone_1": {
-          "moisture": 38.81,
+          "moisture": 0.79,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -21.72
+          "reward": -73.54
         },
         "zone_2": {
-          "moisture": 38.81,
+          "moisture": 9.19,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -21.72
+          "reward": -65.14
         },
         "zone_3": {
-          "moisture": 38.81,
+          "moisture": 5.96,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -21.72
+          "reward": -68.37
         }
       }
     },
     {
       "day": 57,
       "weather": {
-        "temperature": 24.836177634331015,
-        "humidity": 46.34129176812499,
-        "rain_probability": 0.03276925617559945,
+        "temperature": 32.4,
+        "humidity": 47.88,
+        "rain_probability": 0.20238095238095238,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 37.81,
+          "moisture": 3.57,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -18.69
+          "reward": -67.93
         },
         "zone_1": {
-          "moisture": 37.81,
+          "moisture": 0.0,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -18.69
+          "reward": -71.5
         },
         "zone_2": {
-          "moisture": 37.81,
+          "moisture": 5.27,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -18.69
+          "reward": -66.23
         },
         "zone_3": {
-          "moisture": 37.81,
+          "moisture": 2.04,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -18.69
+          "reward": -69.46
         }
       }
     },
     {
       "day": 58,
       "weather": {
-        "temperature": 20.847223933646415,
-        "humidity": 39.35892180664629,
-        "rain_probability": 0.04685140162846018,
+        "temperature": 33.1,
+        "humidity": 46.97,
+        "rain_probability": 0.22023809523809523,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 38.13,
+          "moisture": 0.0,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -18.37
+          "reward": -71.5
         },
         "zone_1": {
-          "moisture": 38.13,
+          "moisture": 0.0,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -18.37
+          "reward": -71.5
         },
         "zone_2": {
-          "moisture": 38.13,
+          "moisture": 0.98,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -18.37
+          "reward": -70.52
         },
         "zone_3": {
-          "moisture": 38.13,
+          "moisture": 0.0,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -18.37
+          "reward": -71.5
         }
       }
     },
     {
       "day": 59,
       "weather": {
-        "temperature": 23.16580317205525,
-        "humidity": 36.41036228538465,
-        "rain_probability": 0.02,
+        "temperature": 32.9,
+        "humidity": 47.23,
+        "rain_probability": 0.19047619047619047,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 37.3,
+          "moisture": 0.0,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -19.2
+          "reward": -71.5
         },
         "zone_1": {
-          "moisture": 37.3,
+          "moisture": 0.0,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -19.2
+          "reward": -71.5
         },
         "zone_2": {
-          "moisture": 37.3,
+          "moisture": 0.0,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -19.2
+          "reward": -71.5
         },
         "zone_3": {
-          "moisture": 37.3,
+          "moisture": 0.0,
           "stage": "flowering",
           "applied_liters": 5.0,
-          "reward": -19.2
+          "reward": -71.5
         }
       }
     },
     {
       "day": 60,
       "weather": {
-        "temperature": 18.773413324236515,
-        "humidity": 38.03916127321392,
-        "rain_probability": 0.047880009542236,
+        "temperature": 33.2,
+        "humidity": 46.839999999999996,
+        "rain_probability": 0.20238095238095238,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 39.05,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -12.45
+          "reward": -66.5
         },
         "zone_1": {
-          "moisture": 39.05,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -12.45
+          "reward": -66.5
         },
         "zone_2": {
-          "moisture": 39.05,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -12.45
+          "reward": -66.5
         },
         "zone_3": {
-          "moisture": 39.05,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -12.45
+          "reward": -66.5
         }
       }
     },
     {
       "day": 61,
       "weather": {
-        "temperature": 20.39828053703182,
-        "humidity": 39.81617103568439,
-        "rain_probability": 0.050725328321901915,
+        "temperature": 34.0,
+        "humidity": 45.8,
+        "rain_probability": 0.20833333333333334,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 40.27,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -11.23
+          "reward": -66.5
         },
         "zone_1": {
-          "moisture": 40.27,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -11.23
+          "reward": -66.5
         },
         "zone_2": {
-          "moisture": 40.27,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -11.23
+          "reward": -66.5
         },
         "zone_3": {
-          "moisture": 40.27,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -11.23
+          "reward": -66.5
         }
       }
     },
     {
       "day": 62,
       "weather": {
-        "temperature": 20.767752750228002,
-        "humidity": 54.70781925085464,
-        "rain_probability": 0.0806430839881088,
+        "temperature": 34.7,
+        "humidity": 44.88999999999999,
+        "rain_probability": 0.22023809523809523,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 41.89,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -9.61
+          "reward": -66.5
         },
         "zone_1": {
-          "moisture": 41.89,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -9.61
+          "reward": -66.5
         },
         "zone_2": {
-          "moisture": 41.89,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -9.61
+          "reward": -66.5
         },
         "zone_3": {
-          "moisture": 41.89,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -9.61
+          "reward": -66.5
         }
       }
     },
     {
       "day": 63,
       "weather": {
-        "temperature": 21.047584477667623,
-        "humidity": 40.62486001494774,
-        "rain_probability": 0.0469723030502765,
+        "temperature": 35.5,
+        "humidity": 43.85,
+        "rain_probability": 0.2261904761904762,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 42.9,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -8.6
+          "reward": -66.5
         },
         "zone_1": {
-          "moisture": 42.9,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -8.6
+          "reward": -66.5
         },
         "zone_2": {
-          "moisture": 42.9,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -8.6
+          "reward": -66.5
         },
         "zone_3": {
-          "moisture": 42.9,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -8.6
+          "reward": -66.5
         }
       }
     },
     {
       "day": 64,
       "weather": {
-        "temperature": 20.902733927482966,
-        "humidity": 49.631086172451376,
-        "rain_probability": 0.10471134102685395,
+        "temperature": 36.1,
+        "humidity": 43.06999999999999,
+        "rain_probability": 0.23214285714285715,
         "actual_rainfall": 0.0,
-        "water_cost": 3.253356581286795
+        "water_cost": 4.5690779299814555
       },
       "zones": {
         "zone_0": {
-          "moisture": 44.29,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -10.59
+          "reward": -71.85
         },
         "zone_1": {
-          "moisture": 44.29,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -10.59
+          "reward": -71.85
         },
         "zone_2": {
-          "moisture": 44.29,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -10.59
+          "reward": -71.85
         },
         "zone_3": {
-          "moisture": 44.29,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -10.59
+          "reward": -71.85
         }
       }
     },
     {
       "day": 65,
       "weather": {
-        "temperature": 20.717884897800307,
-        "humidity": 41.66858532517777,
-        "rain_probability": 0.13883239201600192,
+        "temperature": 36.3,
+        "humidity": 42.81,
+        "rain_probability": 0.20833333333333334,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 45.46,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -6.04
+          "reward": -66.5
         },
         "zone_1": {
-          "moisture": 45.46,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -6.04
+          "reward": -66.5
         },
         "zone_2": {
-          "moisture": 45.46,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -6.04
+          "reward": -66.5
         },
         "zone_3": {
-          "moisture": 45.46,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -6.04
+          "reward": -66.5
         }
       }
     },
     {
       "day": 66,
       "weather": {
-        "temperature": 18.722288987611222,
-        "humidity": 51.62046313968628,
-        "rain_probability": 0.10366881782826537,
-        "actual_rainfall": 4.389328996474284,
-        "water_cost": 1.0
+        "temperature": 36.4,
+        "humidity": 42.68,
+        "rain_probability": 0.20238095238095238,
+        "actual_rainfall": 0.0,
+        "water_cost": 3.886461967539587
       },
       "zones": {
         "zone_0": {
-          "moisture": 52.02,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -70.83
         },
         "zone_1": {
-          "moisture": 52.02,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -70.83
         },
         "zone_2": {
-          "moisture": 52.02,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -70.83
         },
         "zone_3": {
-          "moisture": 52.02,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -70.83
         }
       }
     },
     {
       "day": 67,
       "weather": {
-        "temperature": 18.29601887065224,
-        "humidity": 49.698449719003584,
-        "rain_probability": 0.12179409493567775,
+        "temperature": 36.8,
+        "humidity": 42.160000000000004,
+        "rain_probability": 0.19047619047619047,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 54.27,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -66.5
         },
         "zone_1": {
-          "moisture": 54.27,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -66.5
         },
         "zone_2": {
-          "moisture": 54.27,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -66.5
         },
         "zone_3": {
-          "moisture": 54.27,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -66.5
         }
       }
     },
     {
       "day": 68,
       "weather": {
-        "temperature": 20.04834740215757,
-        "humidity": 47.830121138233466,
-        "rain_probability": 0.11574834619315558,
-        "actual_rainfall": 0.0,
-        "water_cost": 3.510085976851915
+        "temperature": 35.9,
+        "humidity": 43.48,
+        "rain_probability": 0.17857142857142858,
+        "actual_rainfall": 0.2,
+        "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 55.88,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -1.77
+          "reward": -66.5
         },
         "zone_1": {
-          "moisture": 55.88,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -1.77
+          "reward": -66.5
         },
         "zone_2": {
-          "moisture": 55.88,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -1.77
+          "reward": -66.5
         },
         "zone_3": {
-          "moisture": 55.88,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -1.77
+          "reward": -66.5
         }
       }
     },
     {
       "day": 69,
       "weather": {
-        "temperature": 18.27483162557157,
-        "humidity": 49.27431907905266,
-        "rain_probability": 0.12251942170483276,
+        "temperature": 36.0,
+        "humidity": 43.199999999999996,
+        "rain_probability": 0.16666666666666666,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 58.13,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -66.5
         },
         "zone_1": {
-          "moisture": 58.13,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -66.5
         },
         "zone_2": {
-          "moisture": 58.13,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -66.5
         },
         "zone_3": {
-          "moisture": 58.13,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -66.5
         }
       }
     },
     {
       "day": 70,
       "weather": {
-        "temperature": 16.478018384631888,
-        "humidity": 47.090806607228835,
-        "rain_probability": 0.09636504786436295,
+        "temperature": 35.1,
+        "humidity": 44.37,
+        "rain_probability": 0.1488095238095238,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 60.93,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -66.5
         },
         "zone_1": {
-          "moisture": 60.93,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -66.5
         },
         "zone_2": {
-          "moisture": 60.93,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -66.5
         },
         "zone_3": {
-          "moisture": 60.93,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -66.5
         }
       }
     },
     {
       "day": 71,
       "weather": {
-        "temperature": 16.55140388996573,
-        "humidity": 53.500012699937585,
-        "rain_probability": 0.15865935408786597,
+        "temperature": 35.3,
+        "humidity": 44.11,
+        "rain_probability": 0.13095238095238096,
         "actual_rainfall": 0.0,
-        "water_cost": 1.0
+        "water_cost": 2.986596769629919
       },
       "zones": {
         "zone_0": {
-          "moisture": 63.84,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -69.48
         },
         "zone_1": {
-          "moisture": 63.84,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -69.48
         },
         "zone_2": {
-          "moisture": 63.84,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -69.48
         },
         "zone_3": {
-          "moisture": 63.84,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -69.48
         }
       }
     },
     {
       "day": 72,
       "weather": {
-        "temperature": 16.762523565168074,
-        "humidity": 49.91436287951023,
-        "rain_probability": 0.1487849352589823,
+        "temperature": 35.0,
+        "humidity": 44.5,
+        "rain_probability": 0.1130952380952381,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 66.61,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -66.5
         },
         "zone_1": {
-          "moisture": 66.61,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -66.5
         },
         "zone_2": {
-          "moisture": 66.61,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -66.5
         },
         "zone_3": {
-          "moisture": 66.61,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -66.5
         }
       }
     },
     {
       "day": 73,
       "weather": {
-        "temperature": 18.808823505564824,
-        "humidity": 46.99197267769919,
-        "rain_probability": 0.2695025571335152,
+        "temperature": 35.4,
+        "humidity": 43.98,
+        "rain_probability": 0.10119047619047619,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 68.62,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -66.5
         },
         "zone_1": {
-          "moisture": 68.62,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -66.5
         },
         "zone_2": {
-          "moisture": 68.62,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -66.5
         },
         "zone_3": {
-          "moisture": 68.62,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": 2.0
+          "reward": -66.5
         }
       }
     },
     {
       "day": 74,
       "weather": {
-        "temperature": 18.229424776679675,
-        "humidity": 47.6684543354622,
-        "rain_probability": 0.25504283458682653,
-        "actual_rainfall": 3.435230430680443,
-        "water_cost": 1.0
+        "temperature": 35.1,
+        "humidity": 44.37,
+        "rain_probability": 0.1130952380952381,
+        "actual_rainfall": 0.0,
+        "water_cost": 3.386314920324671
       },
       "zones": {
         "zone_0": {
-          "moisture": 74.27,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -3.64
+          "reward": -70.08
         },
         "zone_1": {
-          "moisture": 74.27,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -3.64
+          "reward": -70.08
         },
         "zone_2": {
-          "moisture": 74.27,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -3.64
+          "reward": -70.08
         },
         "zone_3": {
-          "moisture": 74.27,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -3.64
+          "reward": -70.08
         }
       }
     },
     {
       "day": 75,
       "weather": {
-        "temperature": 19.03572803110165,
-        "humidity": 55.862939588610594,
-        "rain_probability": 0.2074889287528355,
+        "temperature": 35.0,
+        "humidity": 44.5,
+        "rain_probability": 0.1130952380952381,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 76.47,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -4.73
+          "reward": -66.5
         },
         "zone_1": {
-          "moisture": 76.47,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -4.73
+          "reward": -66.5
         },
         "zone_2": {
-          "moisture": 76.47,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -4.73
+          "reward": -66.5
         },
         "zone_3": {
-          "moisture": 76.47,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -4.73
+          "reward": -66.5
         }
       }
     },
     {
       "day": 76,
       "weather": {
-        "temperature": 17.374907203069025,
-        "humidity": 63.837314074991866,
-        "rain_probability": 0.16210916208229056,
-        "actual_rainfall": 14.212318660977962,
+        "temperature": 35.7,
+        "humidity": 43.589999999999996,
+        "rain_probability": 0.11904761904761904,
+        "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 93.58,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -13.29
+          "reward": -66.5
         },
         "zone_1": {
-          "moisture": 93.58,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -13.29
+          "reward": -66.5
         },
         "zone_2": {
-          "moisture": 93.58,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -13.29
+          "reward": -66.5
         },
         "zone_3": {
-          "moisture": 93.58,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -13.29
+          "reward": -66.5
         }
       }
     },
     {
       "day": 77,
       "weather": {
-        "temperature": 18.300891926099247,
-        "humidity": 57.67995657133176,
-        "rain_probability": 0.15690316348368416,
-        "actual_rainfall": 7.660386977437488,
-        "water_cost": 1.0
+        "temperature": 35.1,
+        "humidity": 44.37,
+        "rain_probability": 0.1488095238095238,
+        "actual_rainfall": 0.0,
+        "water_cost": 3.068096804461942
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -16.5
+          "reward": -69.6
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -16.5
+          "reward": -69.6
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -16.5
+          "reward": -69.6
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -16.5
+          "reward": -69.6
         }
       }
     },
     {
       "day": 78,
       "weather": {
-        "temperature": 19.080087585121493,
-        "humidity": 57.21752808823645,
-        "rain_probability": 0.28449050094158235,
-        "actual_rainfall": 2.5603998759251376,
-        "water_cost": 1.0
+        "temperature": 36.1,
+        "humidity": 43.06999999999999,
+        "rain_probability": 0.17261904761904762,
+        "actual_rainfall": 0.0,
+        "water_cost": 4.926745060987258
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -16.5
+          "reward": -72.39
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -16.5
+          "reward": -72.39
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -16.5
+          "reward": -72.39
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -16.5
+          "reward": -72.39
         }
       }
     },
     {
       "day": 79,
       "weather": {
-        "temperature": 17.787314901390594,
-        "humidity": 60.15947900548554,
-        "rain_probability": 0.2505793573514943,
-        "actual_rainfall": 17.402363252022262,
+        "temperature": 36.7,
+        "humidity": 42.28999999999999,
+        "rain_probability": 0.19642857142857142,
+        "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -16.5
+          "reward": -66.5
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -16.5
+          "reward": -66.5
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -16.5
+          "reward": -66.5
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -16.5
+          "reward": -66.5
         }
       }
     },
     {
       "day": 80,
       "weather": {
-        "temperature": 19.076710725974888,
-        "humidity": 66.16526362415833,
-        "rain_probability": 0.2740071701695805,
-        "actual_rainfall": 31.087313015819056,
+        "temperature": 36.7,
+        "humidity": 42.28999999999999,
+        "rain_probability": 0.20833333333333334,
+        "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -16.5
+          "reward": -66.5
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -16.5
+          "reward": -66.5
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -16.5
+          "reward": -66.5
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -16.5
+          "reward": -66.5
         }
       }
     },
     {
       "day": 81,
       "weather": {
-        "temperature": 17.56889920129401,
-        "humidity": 61.61878079708944,
-        "rain_probability": 0.17532880455715288,
+        "temperature": 36.3,
+        "humidity": 42.81,
+        "rain_probability": 0.20238095238095238,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -16.5
+          "reward": -66.5
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -16.5
+          "reward": -66.5
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -16.5
+          "reward": -66.5
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -16.5
+          "reward": -66.5
         }
       }
     },
     {
       "day": 82,
       "weather": {
-        "temperature": 18.216802810424234,
-        "humidity": 59.33205321930739,
-        "rain_probability": 0.3214385707907699,
-        "actual_rainfall": 0.07147561891658281,
+        "temperature": 36.8,
+        "humidity": 42.160000000000004,
+        "rain_probability": 0.20238095238095238,
+        "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -16.5
+          "reward": -66.5
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -16.5
+          "reward": -66.5
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -16.5
+          "reward": -66.5
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -16.5
+          "reward": -66.5
         }
       }
     },
     {
       "day": 83,
       "weather": {
-        "temperature": 18.416939718651598,
-        "humidity": 67.75774866182518,
-        "rain_probability": 0.310197279827863,
-        "actual_rainfall": 7.797134677720982,
-        "water_cost": 2.8710974748001448
+        "temperature": 37.1,
+        "humidity": 41.769999999999996,
+        "rain_probability": 0.21428571428571427,
+        "actual_rainfall": 0.0,
+        "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -19.31
+          "reward": -66.5
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -19.31
+          "reward": -66.5
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -19.31
+          "reward": -66.5
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -19.31
+          "reward": -66.5
         }
       }
     },
     {
       "day": 84,
       "weather": {
-        "temperature": 17.451617127600322,
-        "humidity": 65.18118411699302,
-        "rain_probability": 0.2442164432122471,
+        "temperature": 36.6,
+        "humidity": 42.419999999999995,
+        "rain_probability": 0.20238095238095238,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -16.5
+          "reward": -66.5
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -16.5
+          "reward": -66.5
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -16.5
+          "reward": -66.5
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "fruiting",
           "applied_liters": 5.0,
-          "reward": -16.5
+          "reward": -66.5
         }
       }
     },
     {
       "day": 85,
       "weather": {
-        "temperature": 20.258322766178793,
-        "humidity": 71.49555874436706,
-        "rain_probability": 0.288227158502492,
-        "actual_rainfall": 11.18119289137024,
+        "temperature": 37.1,
+        "humidity": 41.769999999999996,
+        "rain_probability": 0.19642857142857142,
+        "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         }
       }
     },
     {
       "day": 86,
       "weather": {
-        "temperature": 19.131790547489597,
-        "humidity": 65.47753203233988,
-        "rain_probability": 0.3368107707547616,
-        "actual_rainfall": 12.491273239933463,
+        "temperature": 38.3,
+        "humidity": 40.21,
+        "rain_probability": 0.17857142857142858,
+        "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         }
       }
     },
     {
       "day": 87,
       "weather": {
-        "temperature": 20.186992158720233,
-        "humidity": 59.14586143032783,
-        "rain_probability": 0.3377791982308267,
+        "temperature": 38.0,
+        "humidity": 40.6,
+        "rain_probability": 0.17261904761904762,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         }
       }
     },
     {
       "day": 88,
       "weather": {
-        "temperature": 21.24474314092935,
-        "humidity": 59.09373341509284,
-        "rain_probability": 0.3317421755301652,
+        "temperature": 37.4,
+        "humidity": 41.38,
+        "rain_probability": 0.18452380952380953,
         "actual_rainfall": 0.0,
-        "water_cost": 1.0
+        "water_cost": 4.445958742684405
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -51.67
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -51.67
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -51.67
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -51.67
         }
       }
     },
     {
       "day": 89,
       "weather": {
-        "temperature": 21.570404846055396,
-        "humidity": 74.8123383027931,
-        "rain_probability": 0.35199094559250116,
+        "temperature": 36.8,
+        "humidity": 42.160000000000004,
+        "rain_probability": 0.19047619047619047,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         }
       }
     },
     {
       "day": 90,
       "weather": {
-        "temperature": 22.29579564511939,
-        "humidity": 75.7535835195407,
-        "rain_probability": 0.3549581815481503,
+        "temperature": 37.0,
+        "humidity": 41.9,
+        "rain_probability": 0.17857142857142858,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         }
       }
     },
     {
       "day": 91,
       "weather": {
-        "temperature": 21.565657413403887,
-        "humidity": 66.76732281611721,
-        "rain_probability": 0.38511292355486143,
-        "actual_rainfall": 6.592707949592883,
+        "temperature": 37.7,
+        "humidity": 41.065,
+        "rain_probability": 0.16666666666666666,
+        "actual_rainfall": 0.1,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         }
       }
     },
     {
       "day": 92,
       "weather": {
-        "temperature": 21.51102313912004,
-        "humidity": 66.228663594978,
-        "rain_probability": 0.4604840198353956,
-        "actual_rainfall": 3.747748160042078,
+        "temperature": 34.4,
+        "humidity": 46.480000000000004,
+        "rain_probability": 0.16666666666666666,
+        "actual_rainfall": 1.6,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 1.3,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -45.2
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 1.3,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -45.2
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 1.3,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -45.2
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 1.3,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -45.2
         }
       }
     },
     {
       "day": 93,
       "weather": {
-        "temperature": 22.474188351119817,
-        "humidity": 75.8796272482013,
-        "rain_probability": 0.2674608034377174,
+        "temperature": 37.3,
+        "humidity": 41.510000000000005,
+        "rain_probability": 0.17857142857142858,
         "actual_rainfall": 0.0,
-        "water_cost": 1.0
+        "water_cost": 2.609509414468072
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 0.08,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -48.84
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 0.08,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -48.84
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 0.08,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -48.84
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 0.08,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -48.84
         }
       }
     },
     {
       "day": 94,
       "weather": {
-        "temperature": 20.52400192758553,
-        "humidity": 63.41141887810633,
-        "rain_probability": 0.3922601353296735,
+        "temperature": 37.0,
+        "humidity": 41.9,
+        "rain_probability": 0.19642857142857142,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         }
       }
     },
     {
       "day": 95,
       "weather": {
-        "temperature": 21.35719533636579,
-        "humidity": 64.79221264964818,
-        "rain_probability": 0.4206290199436119,
+        "temperature": 37.0,
+        "humidity": 41.9,
+        "rain_probability": 0.17261904761904762,
         "actual_rainfall": 0.0,
-        "water_cost": 3.261761509402078
+        "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -29.89
+          "reward": -46.5
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -29.89
+          "reward": -46.5
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -29.89
+          "reward": -46.5
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -29.89
+          "reward": -46.5
         }
       }
     },
     {
       "day": 96,
       "weather": {
-        "temperature": 22.02643148414955,
-        "humidity": 72.74538139037469,
-        "rain_probability": 0.43366528458475806,
-        "actual_rainfall": 8.819521004886596,
+        "temperature": 35.9,
+        "humidity": 43.33,
+        "rain_probability": 0.16071428571428573,
+        "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         }
       }
     },
     {
       "day": 97,
       "weather": {
-        "temperature": 23.00507924191198,
-        "humidity": 67.76128314663238,
-        "rain_probability": 0.4066656069427082,
-        "actual_rainfall": 11.876324959368215,
+        "temperature": 34.5,
+        "humidity": 45.15,
+        "rain_probability": 0.15476190476190477,
+        "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         }
       }
     },
     {
       "day": 98,
       "weather": {
-        "temperature": 25.596995471570718,
-        "humidity": 69.8561111861168,
-        "rain_probability": 0.34312932136927476,
+        "temperature": 35.1,
+        "humidity": 44.37,
+        "rain_probability": 0.16071428571428573,
         "actual_rainfall": 0.0,
-        "water_cost": 1.0
+        "water_cost": 4.7328028033054945
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -52.1
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -52.1
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -52.1
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -52.1
         }
       }
     },
     {
       "day": 99,
       "weather": {
-        "temperature": 24.1394572607254,
-        "humidity": 69.15318643380151,
-        "rain_probability": 0.45235507136335573,
+        "temperature": 36.2,
+        "humidity": 42.94,
+        "rain_probability": 0.1488095238095238,
         "actual_rainfall": 0.0,
         "water_cost": 1.0
       },
       "zones": {
         "zone_0": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         },
         "zone_1": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         },
         "zone_2": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         },
         "zone_3": {
-          "moisture": 100.0,
+          "moisture": 0.0,
           "stage": "maturity",
           "applied_liters": 5.0,
-          "reward": -26.5
+          "reward": -46.5
         }
       }
     }

@@ -1,13 +1,12 @@
 """
 train_dqn.py
 
-The training loop that was missing: ties MultiZoneIrrigationEnv +
-DQNAgent together and actually runs episodes.
-
-Multi-agent detail: all n_zones share ONE DQNAgent (parameter sharing, per
-dqn_agent.py's docstring). So each simulated day produces n_zones separate
-(obs, action, reward, next_obs, done) transitions -- all pushed into the
-SAME replay buffer, not n_zones separate buffers.
+Independent multi-agent DQN: FOUR separate DQNAgent instances, one per zone
+-- each with its own network, its own replay buffer, its own optimizer.
+Zones no longer share weights (contrast with the earlier parameter-sharing
+version): each zone can genuinely learn a different strategy, and the
+shared water budget becomes real inter-agent coordination pressure rather
+than just a shared training signal inside one policy.
 
 Usage:
     python train_dqn.py --episodes 500 --weather synthetic
@@ -36,55 +35,67 @@ def train(episodes=500, weather_source="synthetic", n_zones=4, season_length=100
     env = MultiZoneIrrigationEnv(n_zones=n_zones, season_length=season_length,
                                   daily_water_budget=daily_water_budget,
                                   weather_source=weather_source, seed=seed)
-    agent = DQNAgent(obs_dim=OBS_DIM, n_actions=N_ACTIONS)
 
-    history = {"episode": [], "total_reward": [], "avg_loss": [], "epsilon": []}
+    # ONE independent agent per zone -- separate network, buffer, optimizer.
+    # env.possible_agents (unlike env.agents) stays stable across resets, so
+    # it's safe to build this dict once, outside the episode loop.
+    agents = {a: DQNAgent(obs_dim=OBS_DIM, n_actions=N_ACTIONS) for a in env.possible_agents}
+
+    history = {"episode": [], "total_reward": [], "avg_loss": [], "epsilon": [],
+               "per_zone_reward": []}
     rng = np.random.default_rng(seed)
 
     for ep in range(episodes):
         epsilon = max(eps_end, eps_start - (eps_start - eps_end) * ep / eps_decay_episodes)
 
-        ep_seed = int(rng.integers(0, 1_000_000))  # different weather window every episode
+        ep_seed = int(rng.integers(0, 1_000_000))
         obs, infos = env.reset(seed=ep_seed)
         ep_reward = 0.0
+        zone_reward = {a: 0.0 for a in env.possible_agents}
         losses = []
 
         while env.agents:
-            current_agents = list(env.agents)  # snapshot: env.agents may empty out inside step()
-            actions = {a: agent.select_action(obs[a], epsilon) for a in current_agents}
+            current_agents = list(env.agents)
+            actions = {a: agents[a].select_action(obs[a], epsilon) for a in current_agents}
             next_obs, rewards, term, trunc, infos = env.step(actions)
 
             for a in current_agents:
-                agent.store(obs[a], actions[a], rewards[a], next_obs[a], trunc[a])
+                agents[a].store(obs[a], actions[a], rewards[a], next_obs[a], trunc[a])
                 ep_reward += rewards[a]
+                zone_reward[a] += rewards[a]
 
-            loss = agent.train_step(batch_size=batch_size)
-            if loss is not None:
-                losses.append(loss)
+                # each zone's agent trains on ONLY its own buffer -- this is
+                # what actually makes them independent, not just differently
+                # initialized copies of one shared setup
+                loss = agents[a].train_step(batch_size=batch_size)
+                if loss is not None:
+                    losses.append(loss)
 
             obs = next_obs
 
         if ep % target_update_every == 0:
-            agent.update_target()
+            for a in agents:
+                agents[a].update_target()
 
         avg_loss = float(np.mean(losses)) if losses else None
         history["episode"].append(ep)
         history["total_reward"].append(ep_reward)
         history["avg_loss"].append(avg_loss)
         history["epsilon"].append(epsilon)
+        history["per_zone_reward"].append(zone_reward)
 
         if ep % 10 == 0 or ep == episodes - 1:
             loss_str = "n/a" if avg_loss is None else f"{avg_loss:.3f}"
             print(f"ep {ep:4d}  reward={ep_reward:9.1f}  avg_loss={loss_str}  epsilon={epsilon:.3f}")
 
-    ckpt_path = os.path.join(checkpoint_dir, "dqn_final.pt")
-    torch.save(agent.q_net.state_dict(), ckpt_path)
+    ckpt_path = os.path.join(checkpoint_dir, "dqn_independent_final.pt")
+    torch.save({a: agents[a].q_net.state_dict() for a in agents}, ckpt_path)
     with open(log_path, "w") as f:
         json.dump(history, f, indent=2)
 
     print(f"\nSaved checkpoint to {ckpt_path}")
     print(f"Saved training log to {log_path}")
-    return agent, history
+    return agents, history
 
 
 if __name__ == "__main__":

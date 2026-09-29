@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Smart Irrigation — Training &amp; Evidence</title>
+<style>
+  :root {
+    --bg: #F1F3EC; --panel: #FBFBF7; --line: #D6DBC7;
+    --ink: #23281F; --ink-dim: #6B7460; --water: #2B5266;
+    --healthy: #4A6741; --low: #A67C27; --critical: #A13D2C;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: Georgia, "Iowan Old Style", serif; padding: 24px; }
+  .mono { font-family: Consolas, "SF Mono", monospace; }
+  h1 { font-size: 1.6rem; font-weight: normal; margin: 0 0 4px 0; }
+  h1 a { font-size: 0.5em; color: var(--water); margin-left: 14px; }
+  h2 { font-size: 1.15rem; font-weight: normal; margin: 0 0 4px 0; }
+  h3 { font-size: 0.95rem; font-weight: normal; color: var(--ink-dim); margin: 0 0 10px 0; }
+  .subline { color: var(--ink-dim); font-size: 0.9rem; margin-bottom: 20px; }
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 3px; padding: 16px 20px; margin-bottom: 16px; }
+  .charts-row { display: flex; gap: 16px; flex-wrap: wrap; }
+  .chart-box { flex: 1; min-width: 280px; }
+  svg { width: 100%; height: auto; display: block; }
+  .caption { font-size: 0.78rem; color: var(--ink-dim); margin-top: 6px; }
+  .legend { display: flex; gap: 16px; font-size: 0.78rem; margin-bottom: 8px; }
+  .legend-item { display: flex; align-items: center; gap: 6px; color: var(--ink-dim); }
+  .legend-swatch { width: 12px; height: 3px; display: inline-block; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin-top: 10px; }
+  th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--line); }
+  th { color: var(--ink-dim); font-weight: normal; }
+  td { font-family: Consolas, monospace; }
+  td:first-child { font-family: Georgia, serif; }
+  tr.best td { color: var(--healthy); }
+  .stat-row { display: flex; gap: 26px; flex-wrap: wrap; margin: 10px 0; }
+  .stat { display: flex; flex-direction: column; gap: 2px; }
+  .stat-label { font-size: 0.78rem; color: var(--ink-dim); }
+  .stat-val { font-family: Consolas, monospace; font-size: 1.1rem; color: var(--ink); }
+  .interpretation { font-size: 0.92rem; margin-top: 8px; padding-top: 10px; border-top: 1px solid var(--line); }
+  .interpretation.significant { color: var(--healthy); }
+  .interpretation.not-significant { color: var(--ink-dim); }
+  .empty-state { color: var(--ink-dim); font-size: 0.9rem; padding: 10px 0; }
+  .empty-state .mono { color: var(--critical); }
+</style>
+</head>
+<body>
+
+<h1>Training &amp; Evidence <a href="/">&larr; Live Monitor</a></h1>
+<div class="subline">Training curves and the full statistical validation behind the results — computed once, served from saved files.</div>
+
+<div class="panel">
+  <h2>Training progress</h2>
+  <h3 id="trainingCaption">Loading…</h3>
+  <div id="trainingCharts"></div>
+</div>
+
+<div class="panel">
+  <h2>Validated comparison</h2>
+  <h3 id="comparisonCaption">Loading…</h3>
+  <div id="comparisonContent"></div>
+</div>
+
+<script>
+const ZONE_COLORS = { zone_0: "#3D6B7A", zone_1: "#4A6741", zone_2: "#A67C27", zone_3: "#7A4F6B" };
+const POLICY_LABELS = {
+  random: "Random", fixed_schedule: "Fixed Schedule", threshold: "Threshold",
+  trained_dqn_independent: "Trained DQN (independent)", trained_dqn_shared: "Trained DQN (shared)",
+};
+
+function movingAverage(values, window) {
+  const out = [];
+  for (let i = 0; i < values.length; i++) {
+    const start = Math.max(0, i - window + 1);
+    const slice = values.slice(start, i + 1);
+    out.push(slice.reduce((a, b) => a + b, 0) / slice.length);
+  }
+  return out;
+}
+
+function buildLineSVG(series, opts) {
+  const W = opts.width || 760, H = opts.height || 160, PAD = 20;
+  let minY = opts.minY, maxY = opts.maxY;
+  if (minY === undefined || maxY === undefined) {
+    const all = series.flatMap(s => s.values);
+    minY = opts.minY !== undefined ? opts.minY : Math.min(...all);
+    maxY = opts.maxY !== undefined ? opts.maxY : Math.max(...all);
+  }
+  const range = (maxY - minY) || 1;
+  let svg = `<line x1="${PAD}" y1="${H-PAD}" x2="${W-PAD}" y2="${H-PAD}" stroke="var(--line)" stroke-width="1"/>`;
+  if (minY < 0 && maxY > 0) {
+    const zeroY = PAD + (H - 2*PAD) * (1 - (0 - minY) / range);
+    svg += `<line x1="${PAD}" y1="${zeroY}" x2="${W-PAD}" y2="${zeroY}" stroke="var(--line)" stroke-width="1" stroke-dasharray="3 3"/>`;
+  }
+  series.forEach(s => {
+    const n = s.values.length;
+    const xStep = n > 1 ? (W - 2*PAD) / (n - 1) : 0;
+    const path = s.values.map((v, i) => {
+      const x = PAD + i * xStep;
+      const y = PAD + (H - 2*PAD) * (1 - (v - minY) / range);
+      return (i === 0 ? "M" : "L") + x.toFixed(2) + "," + y.toFixed(2);
+    }).join(" ");
+    svg += `<path d="${path}" fill="none" stroke="${s.color}" stroke-width="${s.width||1.5}" opacity="${s.opacity!=null?s.opacity:1}"/>`;
+  });
+  return `<svg viewBox="0 0 ${W} ${H}">${svg}</svg>`;
+}
+
+async function loadTrainingLog() {
+  const box = document.getElementById("trainingCharts");
+  const caption = document.getElementById("trainingCaption");
+  try {
+    const res = await fetch("/api/training-log");
+    if (!res.ok) {
+      const err = await res.json();
+      caption.innerHTML = `<span class="empty-state">No training log yet. Run: <span class="mono">${err.detail}</span></span>`;
+      return;
+    }
+    const log = await res.json();
+    const episodes = log.episode;
+    caption.textContent = `${episodes.length} episodes`;
+
+    const rewardSmoothed = movingAverage(log.total_reward, 20);
+    const rewardSvg = buildLineSVG([
+      { values: log.total_reward, color: "var(--water)", width: 1, opacity: 0.25 },
+      { values: rewardSmoothed, color: "var(--water)", width: 2 },
+    ], {});
+
+    const firstValidLoss = log.avg_loss.findIndex(v => v !== null && v !== undefined);
+    const lossValues = firstValidLoss >= 0 ? log.avg_loss.slice(firstValidLoss) : [];
+    const lossSmoothed = movingAverage(lossValues, 20);
+    const lossSvg = lossValues.length
+      ? buildLineSVG([
+          { values: lossValues, color: "var(--low)", width: 1, opacity: 0.25 },
+          { values: lossSmoothed, color: "var(--low)", width: 2 },
+        ], {})
+      : `<div class="empty-state">No loss recorded yet.</div>`;
+
+    const epsilonSvg = buildLineSVG([{ values: log.epsilon, color: "var(--ink-dim)", width: 1.75 }], { minY: 0, maxY: 1 });
+
+    let perZoneSvg = "";
+    let perZoneLegend = "";
+    if (Array.isArray(log.per_zone_reward) && log.per_zone_reward.length > 0) {
+      const zoneKeys = Object.keys(log.per_zone_reward[0]);
+      const perZoneSeries = zoneKeys.map(z => ({
+        values: movingAverage(log.per_zone_reward.map(ep => ep[z]), 20),
+        color: ZONE_COLORS[z] || "#888", width: 1.75,
+      }));
+      perZoneSvg = buildLineSVG(perZoneSeries, {});
+      perZoneLegend = `<div class="legend">${zoneKeys.map(z =>
+        `<span class="legend-item"><span class="legend-swatch" style="background:${ZONE_COLORS[z]||'#888'}"></span>${z}</span>`
+      ).join("")}</div>`;
+    }
+
+    box.innerHTML = `
+      <div class="charts-row">
+        <div class="chart-box"><h3>Total reward per episode</h3>${rewardSvg}<div class="caption">faint: raw &middot; bold: 20-episode moving average</div></div>
+        <div class="chart-box"><h3>Training loss per episode</h3>${lossSvg}<div class="caption">${firstValidLoss > 0 ? "first " + firstValidLoss + " episodes omitted (buffer still filling)" : ""}</div></div>
+      </div>
+      <div class="charts-row" style="margin-top:16px;">
+        <div class="chart-box"><h3>Epsilon (exploration rate)</h3>${epsilonSvg}<div class="caption">1.0 = fully random &rarr; 0.05 = mostly greedy</div></div>
+        <div class="chart-box"><h3>Per-zone reward (smoothed)</h3>${perZoneLegend}${perZoneSvg}<div class="caption">divergence here means the 4 independent agents learned different strategies, not identical copies</div></div>
+      </div>`;
+  } catch (err) {
+    caption.innerHTML = `<span class="empty-state">Couldn't load training log: ${err.message}</span>`;
+  }
+}
+
+function statBlock(title, stats, seedsUsed) {
+  const sig = stats.sign_test_p < 0.05;
+  return `
+    <h3>${title}</h3>
+    <div class="stat-row">
+      <div class="stat"><span class="stat-label">record</span><span class="stat-val">${stats.wins}&ndash;${stats.losses}</span></div>
+      <div class="stat"><span class="stat-label">mean difference</span><span class="stat-val">${stats.mean_diff > 0 ? "+" : ""}${stats.mean_diff}</span></div>
+      <div class="stat"><span class="stat-label">std of difference</span><span class="stat-val">${stats.std_diff}</span></div>
+      <div class="stat"><span class="stat-label">sign-test p</span><span class="stat-val">${stats.sign_test_p}</span></div>
+      <div class="stat"><span class="stat-label">t-statistic (df=${seedsUsed-1})</span><span class="stat-val">${stats.t_statistic}</span></div>
+    </div>
+    <div class="interpretation ${sig ? 'significant' : 'not-significant'}">
+      ${sig
+        ? `Statistically significant (p &lt; 0.05) &mdash; this result is unlikely to be due to chance.`
+        : `Not statistically significant at this sample size.`}
+    </div>`;
+}
+
+async function loadComparisonReport() {
+  const caption = document.getElementById("comparisonCaption");
+  const content = document.getElementById("comparisonContent");
+  try {
+    const res = await fetch("/api/comparison-report");
+    if (!res.ok) {
+      const err = await res.json();
+      caption.innerHTML = `<span class="empty-state">No comparison report yet. Run: <span class="mono">${err.detail}</span></span>`;
+      return;
+    }
+    const report = await res.json();
+    caption.textContent = `Across ${report.n_trials} real weather windows (seeds ${report.seeds[0]}-${report.seeds[report.seeds.length-1]})`;
+
+    const rows = Object.entries(report.summary);
+    const bestYield = Math.max(...rows.map(([,v]) => v.yield_mean));
+    const summaryTable = `
+      <table>
+        <thead><tr><th>Policy</th><th>Mean reward</th><th>Median</th><th>Worst</th><th>Yield mean</th><th>Yield std</th></tr></thead>
+        <tbody>${rows.map(([name, v]) => `
+          <tr class="${v.yield_mean === bestYield ? 'best' : ''}">
+            <td>${POLICY_LABELS[name] || name}</td><td>${v.reward_mean}</td><td>${v.reward_median}</td>
+            <td>${v.reward_worst}</td><td>${v.yield_mean}%</td><td>${v.yield_std}</td>
+          </tr>`).join("")}</tbody>
+      </table>`;
+
+    let significanceHtml = "";
+    if (report.paired_dqn_vs_threshold) {
+      significanceHtml += `<div class="panel" style="margin-top:14px;">${statBlock(
+        "Trained DQN vs Threshold (paired, by yield)", report.paired_dqn_vs_threshold, report.n_trials)}</div>`;
+    }
+    if (report.paired_independent_vs_shared) {
+      significanceHtml += `<div class="panel" style="margin-top:14px;">${statBlock(
+        "Architecture ablation: Independent vs Shared-parameter DQN (paired, by yield)",
+        report.paired_independent_vs_shared, report.n_trials)}</div>`;
+    }
+
+    let failureHtml = "";
+    if (Array.isArray(report.threshold_vs_fixed_failure_seeds) && report.threshold_vs_fixed_failure_seeds.length > 0) {
+      const rows = report.threshold_vs_fixed_failure_seeds;
+      failureHtml = `
+        <div class="panel" style="margin-top:14px;">
+          <h3>Seeds where Threshold loses to Fixed (the synchronized-demand failure mode)</h3>
+          <table>
+            <thead><tr><th>Seed</th><th>Fixed</th><th>Threshold</th><th>Trained DQN</th><th>DQN beats both?</th></tr></thead>
+            <tbody>${rows.map(r => `
+              <tr class="${r.dqn_beats_both ? 'best' : ''}">
+                <td>${r.seed}</td><td>${r.fixed}%</td><td>${r.threshold}%</td><td>${r.trained_dqn}%</td>
+                <td>${r.dqn_beats_both ? "yes" : "no"}</td>
+              </tr>`).join("")}</tbody>
+          </table>
+          <div class="caption">${rows.filter(r => r.dqn_beats_both).length} of ${rows.length} failure-mode seeds: the trained agent avoided the trap that catches Threshold.</div>
+        </div>`;
+    }
+
+    content.innerHTML = summaryTable + significanceHtml + failureHtml;
+  } catch (err) {
+    caption.innerHTML = `<span class="empty-state">Couldn't load comparison report: ${err.message}</span>`;
+  }
+}
+
+loadTrainingLog();
+loadComparisonReport();
+</script>
+</body>
+</html>

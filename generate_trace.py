@@ -72,7 +72,8 @@ if __name__ == "__main__":
         sys.exit(1)
     policy_fn = POLICIES[policy_name]
 
-    env = MultiZoneIrrigationEnv(n_zones=4, season_length=100, daily_water_budget=25.0, seed=42)
+    env = MultiZoneIrrigationEnv(n_zones=4, season_length=100, daily_water_budget=25.0,
+                                  seed=42, weather_source="real")
     trace, totals = run_policy(env, policy_fn, policy_name)
 
     os.makedirs("data", exist_ok=True)

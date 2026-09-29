@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Smart Irrigation — Live Dashboard</title>
+<style>
+  :root {
+    --bg: #F1F3EC;
+    --panel: #FBFBF7;
+    --line: #D6DBC7;
+    --ink: #23281F;
+    --ink-dim: #6B7460;
+    --water: #2B5266;
+    --healthy: #4A6741;
+    --low: #A67C27;
+    --critical: #A13D2C;
+    --zone0: #3D6B7A;
+    --zone1: #4A6741;
+    --zone2: #A67C27;
+    --zone3: #7A4F6B;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: Georgia, "Iowan Old Style", serif; padding: 24px; }
+  .mono { font-family: Consolas, "SF Mono", monospace; }
+  h1 { font-size: 1.6rem; font-weight: normal; margin: 0 0 4px 0; }
+  h1 a { font-size: 0.5em; color: var(--water); margin-left: 14px; }
+  h2 { font-size: 1.1rem; font-weight: normal; color: var(--ink-dim); margin: 0 0 12px 0; }
+  .subline { color: var(--ink-dim); font-size: 0.9rem; margin-bottom: 20px; }
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 3px; padding: 16px 20px; margin-bottom: 16px; }
+  select, button {
+    background: var(--water); color: var(--panel); border: none; border-radius: 3px;
+    padding: 8px 14px; font-family: Consolas, monospace; font-size: 0.9rem; cursor: pointer;
+  }
+  select { background: var(--bg); color: var(--ink); border: 1px solid var(--line); }
+  button:disabled { opacity: 0.45; cursor: not-allowed; }
+  :focus-visible { outline: 2px solid var(--water); outline-offset: 2px; }
+  .row { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+  #dayLabel { font-family: Consolas, monospace; font-size: 1rem; min-width: 110px; }
+  #daySlider { flex: 1; min-width: 200px; accent-color: var(--water); }
+  .meta-chips { display: flex; gap: 20px; flex-wrap: wrap; }
+  .chip { display: flex; gap: 6px; align-items: baseline; }
+  .chip-label { color: var(--ink-dim); font-size: 0.78rem; }
+  .chip-val { font-family: Consolas, monospace; font-size: 0.85rem; color: var(--ink); }
+  .weather-row { display: flex; gap: 28px; flex-wrap: wrap; margin-top: 12px; font-size: 0.88rem; color: var(--ink-dim); }
+  .weather-row .val { font-family: Consolas, monospace; color: var(--ink); }
+  .zones { display: flex; gap: 14px; flex-wrap: wrap; }
+  .zone-card { flex: 1; min-width: 190px; background: var(--panel); border: 1px solid var(--line); border-radius: 3px; padding: 14px 16px; }
+  .zone-card h3 { margin: 0 0 8px 0; font-size: 1rem; font-weight: normal; display: flex; justify-content: space-between; align-items: baseline; }
+  .status-tag { font-family: Consolas, monospace; font-size: 0.7rem; padding: 2px 7px; border-radius: 3px; color: var(--panel); }
+  .status-healthy { background: var(--healthy); }
+  .status-low { background: var(--low); }
+  .status-critical { background: var(--critical); }
+  .status-high { background: var(--water); }
+  .gauge-track { position: relative; height: 12px; background: var(--line); border-radius: 6px; margin-bottom: 8px; }
+  .gauge-fill { position: absolute; top: 0; left: 0; bottom: 0; border-radius: 6px; }
+  @media (prefers-reduced-motion: no-preference) { .gauge-fill { transition: width 0.25s ease; } }
+  .gauge-tick { position: absolute; top: -2px; width: 2px; height: 16px; background: var(--ink-dim); }
+  .gauge-tick.wilt { background: var(--critical); }
+  .zone-stat { font-size: 0.85rem; margin: 3px 0; color: var(--ink-dim); }
+  .zone-stat .val { font-family: Consolas, monospace; color: var(--ink); }
+  .zone-stat .reward-pos { font-family: Consolas, monospace; color: var(--healthy); }
+  .zone-stat .reward-neg { font-family: Consolas, monospace; color: var(--critical); }
+  .chart-title { font-size: 0.95rem; color: var(--ink-dim); margin-bottom: 8px; }
+  svg { width: 100%; height: auto; display: block; }
+  .stage-label { font-size: 9px; fill: var(--ink-dim); font-family: Consolas, monospace; }
+  .stage-boundary { stroke: var(--line); stroke-width: 1; stroke-dasharray: 3 3; }
+  .day-marker { stroke: var(--ink); stroke-width: 1.5; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+  th { color: var(--ink-dim); font-weight: normal; }
+  td { font-family: Consolas, monospace; }
+  td:first-child { font-family: Georgia, serif; }
+  tr.best td { color: var(--healthy); }
+  #status { color: var(--ink-dim); font-size: 0.85rem; }
+  #errorMsg { color: var(--critical); font-size: 0.85rem; display: none; }
+</style>
+</head>
+<body>
+
+<h1>Smart Irrigation — Live Dashboard <a href="/analytics">Training &amp; Evidence &rarr;</a></h1>
+<div class="subline">Runs the actual environment and trained agent live through the backend — nothing here is a saved file.</div>
+
+<div class="panel">
+  <div class="row">
+    <label>Policy</label>
+    <select id="policySelect"></select>
+    <label>Weather seed</label>
+    <input type="number" id="seedInput" value="42" class="mono" style="width:70px;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:3px;padding:6px;">
+    <button id="loadBtn">Run season</button>
+    <span id="status"></span>
+    <span id="errorMsg"></span>
+  </div>
+</div>
+
+<div id="playbackSection" style="display:none;">
+  <div class="panel" id="metaPanel"></div>
+
+  <div class="panel">
+    <div class="row">
+      <button id="playBtn">Play</button>
+      <span id="dayLabel" class="mono">Day 1 / 100</span>
+      <input type="range" id="daySlider" min="0" max="0" value="0" step="1">
+    </div>
+    <div class="weather-row" id="weatherRow"></div>
+  </div>
+
+  <div class="zones" id="zoneCards"></div>
+
+  <div class="panel">
+    <div class="chart-title">Season moisture — all zones</div>
+    <svg id="moistureChart" viewBox="0 0 800 220"></svg>
+  </div>
+</div>
+
+<div class="panel">
+  <h2>Policy comparison (across 20 real weather windows)</h2>
+  <div class="row" style="margin-bottom:12px;">
+    <button id="compareBtn">Run comparison</button>
+    <span id="compareStatus" class="mono" style="color:var(--ink-dim);"></span>
+  </div>
+  <table id="comparisonTable" style="display:none;">
+    <thead>
+      <tr><th>Policy</th><th>% days healthy</th><th>Avg water (L)</th><th>Mean reward</th></tr>
+    </thead>
+    <tbody id="comparisonBody"></tbody>
+  </table>
+</div>
+
+<script>
+const GROWTH_STAGES = [
+  ["seedling", 15, 40, 55, 15], ["vegetative", 40, 45, 65, 15],
+  ["flowering", 60, 55, 75, 20], ["fruiting", 85, 50, 70, 18], ["maturity", 100, 30, 50, 15],
+];
+const ZONE_COLORS = { zone_0: "#3D6B7A", zone_1: "#4A6741", zone_2: "#A67C27", zone_3: "#7A4F6B" };
+const API_BASE = "";  // same origin as the page -- FastAPI serves both
+
+function getStage(day) {
+  for (const [name, endDay, lo, hi, wilt] of GROWTH_STAGES) if (day < endDay) return { name, lo, hi, wilt };
+  const [name, , lo, hi, wilt] = GROWTH_STAGES[GROWTH_STAGES.length - 1];
+  return { name, lo, hi, wilt };
+}
+function moistureStatus(m, lo, hi, wilt) {
+  if (m < wilt) return "critical"; if (m < lo) return "low"; if (m <= hi) return "healthy"; return "high";
+}
+function statusColor(s) { return { healthy: "var(--healthy)", low: "var(--low)", critical: "var(--critical)", high: "var(--water)" }[s]; }
+function fmt(v) { return (v == null || isNaN(v)) ? "n/a" : (Math.round(v * 100) / 100).toString(); }
+function buildPath(values, width, height, minY, maxY) {
+  if (values.length === 0) return "";
+  const n = values.length, xStep = n > 1 ? width / (n - 1) : 0, range = (maxY - minY) || 1;
+  return values.map((v, i) => {
+    const x = i * xStep, y = height * (1 - (v - minY) / range);
+    return (i === 0 ? "M" : "L") + x.toFixed(2) + "," + y.toFixed(2);
+  }).join(" ");
+}
+
+let traceData = null, currentDay = 0, playTimer = null;
+
+const policySelect = document.getElementById("policySelect");
+const seedInput = document.getElementById("seedInput");
+const loadBtn = document.getElementById("loadBtn");
+const status = document.getElementById("status");
+const errorMsg = document.getElementById("errorMsg");
+const playbackSection = document.getElementById("playbackSection");
+const metaPanel = document.getElementById("metaPanel");
+const daySlider = document.getElementById("daySlider");
+const dayLabel = document.getElementById("dayLabel");
+const weatherRow = document.getElementById("weatherRow");
+const zoneCards = document.getElementById("zoneCards");
+const playBtn = document.getElementById("playBtn");
+const compareBtn = document.getElementById("compareBtn");
+const compareStatus = document.getElementById("compareStatus");
+const comparisonTable = document.getElementById("comparisonTable");
+const comparisonBody = document.getElementById("comparisonBody");
+
+async function init() {
+  const res = await fetch(API_BASE + "/api/policies");
+  const data = await res.json();
+  policySelect.innerHTML = data.policies.map(p => `<option value="${p}">${p.replace(/_/g, " ")}</option>`).join("");
+  policySelect.value = "trained_dqn";
+}
+
+loadBtn.addEventListener("click", async () => {
+  errorMsg.style.display = "none";
+  status.textContent = "Running season…";
+  loadBtn.disabled = true;
+  try {
+    const policy = policySelect.value, seed = seedInput.value;
+    const res = await fetch(`${API_BASE}/api/trace?policy=${policy}&seed=${seed}`);
+    if (!res.ok) { const err = await res.json(); throw new Error(err.detail || "request failed"); }
+    traceData = await res.json();
+    currentDay = 0;
+    status.textContent = "Loaded " + traceData.days.length + " days";
+    onTraceLoaded();
+  } catch (err) {
+    errorMsg.textContent = "Couldn't run this season: " + err.message;
+    errorMsg.style.display = "inline";
+  } finally {
+    loadBtn.disabled = false;
+  }
+});
+
+function onTraceLoaded() {
+  playbackSection.style.display = "block";
+  const m = traceData.meta;
+  metaPanel.innerHTML = `<div class="meta-chips">
+    <span class="chip"><span class="chip-label">policy</span><span class="chip-val">${m.policy.replace(/_/g, " ")}</span></span>
+    <span class="chip"><span class="chip-label">zones</span><span class="chip-val">${m.n_zones}</span></span>
+    <span class="chip"><span class="chip-label">season</span><span class="chip-val">${m.season_length}d</span></span>
+    <span class="chip"><span class="chip-label">budget</span><span class="chip-val">${m.daily_water_budget}L/day</span></span>
+    <span class="chip"><span class="chip-label">weather</span><span class="chip-val">${m.weather_source}</span></span>
+  </div>`;
+  daySlider.max = traceData.days.length - 1;
+  daySlider.value = 0;
+  renderChart();
+  renderDay(0);
+}
+
+function renderDay(dayIdx) {
+  currentDay = dayIdx;
+  const d = traceData.days[dayIdx];
+  dayLabel.textContent = `Day ${dayIdx + 1} / ${traceData.meta.season_length}`;
+  daySlider.value = dayIdx;
+
+  const w = d.weather || {};
+  weatherRow.innerHTML = `<span>temp <span class="val">${fmt(w.temperature)}&deg;C</span></span>
+    <span>humidity <span class="val">${fmt(w.humidity)}%</span></span>
+    <span>rain today <span class="val">${fmt(w.actual_rainfall)}mm</span></span>
+    <span>water cost <span class="val">${fmt(w.water_cost)}x</span></span>`;
+
+  const stage = getStage(d.day);
+  zoneCards.innerHTML = Object.keys(d.zones).map(zn => {
+    const z = d.zones[zn];
+    const s = moistureStatus(z.moisture, stage.lo, stage.hi, stage.wilt);
+    const rc = z.reward >= 0 ? "reward-pos" : "reward-neg";
+    return `<div class="zone-card">
+      <h3>${zn} <span class="status-tag status-${s}">${s}</span></h3>
+      <div class="gauge-track">
+        <div class="gauge-fill" style="width:${Math.min(z.moisture,100)}%;background:${statusColor(s)}"></div>
+        <div class="gauge-tick wilt" style="left:${stage.wilt}%"></div>
+        <div class="gauge-tick" style="left:${stage.lo}%"></div>
+        <div class="gauge-tick" style="left:${stage.hi}%"></div>
+      </div>
+      <div class="zone-stat">moisture <span class="val">${fmt(z.moisture)}%</span></div>
+      <div class="zone-stat">stage <span class="val">${z.stage}</span></div>
+      <div class="zone-stat">applied <span class="val">${fmt(z.applied_liters)}L</span></div>
+      <div class="zone-stat">reward <span class="${rc}">${(z.reward>=0?"+":"")+fmt(z.reward)}</span></div>
+    </div>`;
+  }).join("");
+  updateMarker();
+}
+
+function renderChart() {
+  const zoneKeys = Object.keys(traceData.days[0].zones);
+  const W = 800, H = 220, PAD = 24, seasonLen = traceData.days.length;
+  let svg = "";
+  GROWTH_STAGES.forEach(([, endDay]) => {
+    if (endDay < seasonLen) {
+      const x = PAD + (endDay / (seasonLen - 1)) * (W - 2 * PAD);
+      svg += `<line class="stage-boundary" x1="${x}" y1="${PAD}" x2="${x}" y2="${H-PAD}"/>`;
+    }
+  });
+  zoneKeys.forEach(zn => {
+    const values = traceData.days.map(d => d.zones[zn].moisture);
+    const path = buildPath(values, W - 2*PAD, H - 2*PAD, 0, 100)
+      .replace(/([ML])([\-\d.]+),([\-\d.]+)/g, (_, cmd, x, y) => cmd + (parseFloat(x)+PAD) + "," + (parseFloat(y)+PAD));
+    svg += `<path d="${path}" fill="none" stroke="${ZONE_COLORS[zn]||'#888'}" stroke-width="1.75"/>`;
+  });
+  svg += `<line id="moistureMarker" class="day-marker" x1="${PAD}" y1="${PAD}" x2="${PAD}" y2="${H-PAD}"/>`;
+  document.getElementById("moistureChart").innerHTML = svg;
+}
+
+function updateMarker() {
+  const W = 800, PAD = 24, seasonLen = traceData.days.length;
+  const x = seasonLen > 1 ? PAD + (currentDay / (seasonLen - 1)) * (W - 2*PAD) : PAD;
+  const m = document.getElementById("moistureMarker");
+  if (m) { m.setAttribute("x1", x); m.setAttribute("x2", x); }
+}
+
+daySlider.addEventListener("input", () => renderDay(parseInt(daySlider.value, 10)));
+playBtn.addEventListener("click", () => {
+  if (playTimer) { clearInterval(playTimer); playTimer = null; playBtn.textContent = "Play"; return; }
+  playBtn.textContent = "Pause";
+  playTimer = setInterval(() => {
+    if (currentDay >= traceData.days.length - 1) { clearInterval(playTimer); playTimer = null; playBtn.textContent = "Play"; return; }
+    renderDay(currentDay + 1);
+  }, 350);
+});
+
+compareBtn.addEventListener("click", async () => {
+  compareBtn.disabled = true;
+  compareStatus.textContent = "Running 20 seasons per policy, this takes a few seconds…";
+  try {
+    const res = await fetch(API_BASE + "/api/comparison?trials=20");
+    const data = await res.json();
+    const rows = Object.entries(data.results);
+    const bestHealthy = Math.max(...rows.map(([,v]) => v.pct_days_healthy));
+    comparisonBody.innerHTML = rows.map(([name, v]) => `
+      <tr class="${v.pct_days_healthy === bestHealthy ? 'best' : ''}">
+        <td>${name.replace(/_/g, " ")}</td><td>${v.pct_days_healthy}%</td><td>${v.avg_water_liters} L</td><td>${v.mean_reward}</td>
+      </tr>`).join("");
+    comparisonTable.style.display = "table";
+    compareStatus.textContent = "Done.";
+  } catch (err) {
+    compareStatus.textContent = "Error: " + err.message;
+  } finally {
+    compareBtn.disabled = false;
+  }
+});
+
+init();
+</script>
+</body>
+</html>
